@@ -1,4 +1,4 @@
-There are some Locust docker images out there. I the image to:
+I wanted the image to:
 * use Python 3
 * use the latest version of Locust
 * be as small as possible
@@ -7,7 +7,7 @@ There are some Locust docker images out there. I the image to:
 
 Most of the images found on docker hub was old (1-2 yo) so I decided to give it a try.
 
-This one is based on python:3.6-alpine, installs locustio package and required dependencies. 
+This one is based on python:3.6-alpine, installs `locustio` package and required dependencies. 
 It weighs about 124MB.
  
 # Usage 
