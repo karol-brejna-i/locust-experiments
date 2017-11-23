@@ -8,7 +8,7 @@ There are some Locust docker images out there. I the image to:
 Most of the images found on docker hub was old (1-2 yo) so I decided to give it a try.
 
 This one is based on python:3.6-alpine, installs locustio package and required dependencies. 
-It weights about 124MB.
+It weighs about 124MB.
  
 # Usage 
 The image doesn't include locust scripts during build. It assumes, the scripts will be supplied on runtime by mounting a volume (to `/locust` path).
