@@ -86,7 +86,7 @@ Basic run:
 ```
 docker run --rm --name standalone `
  -e ATTACKED_HOST=http://172.17.0.2:8089 `
- -v c:\locust-scripts:/locust ` 
+ -v c:\locust-scripts:/locust `
  -p 8089:8089 -d `
  grubykarol/locust:0.8.1-py3.6
 ```
