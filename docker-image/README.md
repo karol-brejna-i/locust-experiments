@@ -2,7 +2,7 @@ I wanted the image to:
 * use Python 3
 * use the latest version of Locust
 * be as small as possible
-* simple to use
+* be simple to use
 * take Locust scripts by means of mounting a volume
 
 Most of the images found on docker hub was old (1-2 yo) so I decided to give it a try.
@@ -23,17 +23,16 @@ docker build --build-arg HTTP_PROXY=$http_proxy --build-arg HTTPS_PROXY=$https_p
 ```
 
 ## Running the image
-The image uses the following envrionment variables to configure its behaviour: 
-
+The image uses the following environment variables to configure its behavior:
 
 | Variable | Description | Default | Example |
 |----------|-------------|---------|---------|
 |LOCUST_FILE   | Sets the `--locustfile` option. | locustfile.py | |
-|ATTACKED_HOST | The URL to test. Required. | - | `ATTACKED_HOST=http://example.com/` |
-|LOCUST_MODE   | Set the mode to run in. Can be `standalone`, `master` or `slave`. | standalone | LOCUST_MODE=master|
-|LOCUST_MASTER | (Locust master IP or hostname. Required for `slave` mode.| - | LOCUST_MASTER=127.0.0.1|
-|LOCUST_MASTER_PORT | Locust master tcp port. Used in `slave` mode. | 5557 | LOCUST_MASTER_PORT=6666|
-|LOCUST_OPTS| Additional locust CLI options. | - | "-c 10 -r 10"|
+|ATTACKED_HOST | The URL to test. Required. | - | http://example.com |
+|LOCUST_MODE   | Set the mode to run in. Can be `standalone`, `master` or `slave`. | standalone | master |
+|LOCUST_MASTER | Locust master IP or hostname. Required for `slave` mode.| - | 127.0.0.1 |
+|LOCUST_MASTER_PORT | Locust master port. Used in `slave` mode. | 5557 | 6666 |
+|LOCUST_OPTS| Additional locust CLI options. | - | "-c 10 -r 10" |
 
 
 ### Standalone
