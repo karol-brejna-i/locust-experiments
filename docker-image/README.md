@@ -2,7 +2,7 @@ I wanted the image to:
 * use Python 3
 * use the latest version of Locust
 * be as small as possible
-* simple to use
+* be simple to use
 * take Locust scripts by means of mounting a volume
 
 Most of the images found on docker hub was old (1-2 yo) so I decided to give it a try.
@@ -23,17 +23,16 @@ docker build --build-arg HTTP_PROXY=$http_proxy --build-arg HTTPS_PROXY=$https_p
 ```
 
 ## Running the image
-The image uses the following envrionment variables to configure its behaviour: 
-
+The image uses the following environment variables to configure its behavior:
 
 | Variable | Description | Default | Example |
 |----------|-------------|---------|---------|
 |LOCUST_FILE   | Sets the `--locustfile` option. | locustfile.py | |
-|ATTACKED_HOST | The URL to test. Required. | - | `ATTACKED_HOST=http://example.com/` |
-|LOCUST_MODE   | Set the mode to run in. Can be `standalone`, `master` or `slave`. | standalone | LOCUST_MODE=master|
-|LOCUST_MASTER | (Locust master IP or hostname. Required for `slave` mode.| - | LOCUST_MASTER=127.0.0.1|
-|LOCUST_MASTER_PORT | Locust master tcp port. Used in `slave` mode. | 5557 | LOCUST_MASTER_PORT=6666|
-|LOCUST_OPTS| Additional locust CLI options. | - | "-c 10 -r 10"|
+|ATTACKED_HOST | The URL to test. Required. | - | http://example.com |
+|LOCUST_MODE   | Set the mode to run in. Can be `standalone`, `master` or `slave`. | standalone | master |
+|LOCUST_MASTER | Locust master IP or hostname. Required for `slave` mode.| - | 127.0.0.1 |
+|LOCUST_MASTER_PORT | Locust master port. Used in `slave` mode. | 5557 | 6666 |
+|LOCUST_OPTS| Additional locust CLI options. | - | "-c 10 -r 10" |
 
 
 ### Standalone
@@ -54,7 +53,7 @@ Run master:
 docker run --name master --hostname master \
  -p 8089:8089 -p 5557:5557 -p 5558:5558 \
  -v $MY_SCRIPTS:/locust \
- -e ATTACKED_HOST='http://172.17.0.2:8089' \
+ -e ATTACKED_HOST='http://master:8089' \
  -e LOCUST_MODE=master \
  --rm -d grubykarol/locust:0.8.1-py3.6
 ```
@@ -63,20 +62,20 @@ and some slaves:
 
 ```
 docker run --name slave0 \
- --link master --env NO_PROXY=172.17.0.2 \
+ --link master --env NO_PROXY=master \
  -v $MY_SCRIPTS:/locust \
- -e ATTACKED_HOST=http://172.17.0.2:8089 \
+ -e ATTACKED_HOST=http://master:8089 \
  -e LOCUST_MODE=slave \
- -e LOCUST_MASTER=172.17.0.2 \
- --rm -d grubykarol/locust:0.8.1-py3.6 
+ -e LOCUST_MASTER=master \
+ --rm -d grubykarol/locust:0.8.1-py3.6
 
 docker run --name slave1 \
- --link master --env NO_PROXY=172.17.0.2 \
+ --link master --env NO_PROXY=master \
  -v $MY_SCRIPTS:/locust \
- -e ATTACKED_HOST=http://172.17.0.2:8089 \
+ -e ATTACKED_HOST=http://master:8089 \
  -e LOCUST_MODE=slave \
- -e LOCUST_MASTER=172.17.0.2 \
- --rm -d grubykarol/locust:0.8.1-py3.6 
+ -e LOCUST_MASTER=master \
+ --rm -d grubykarol/locust:0.8.1-py3.6
 ```
 
 
@@ -85,7 +84,7 @@ For the real brave, Windows PowerShell version:
 Basic run:
 ```
 docker run --rm --name standalone `
- -e ATTACKED_HOST=http://172.17.0.2:8089 `
+ -e ATTACKED_HOST=http://localhost:8089 `
  -v c:\locust-scripts:/locust `
  -p 8089:8089 -d `
  grubykarol/locust:0.8.1-py3.6
@@ -96,7 +95,7 @@ Run master:
 docker run --name master --hostname master `
  -p 8089:8089 -p 5557:5557 -p 5558:5558 `
  -v c:\locust-scripts:/locust `
- -e ATTACKED_HOST='http://172.17.0.2:8089' `
+ -e ATTACKED_HOST='http://master:8089' `
  -e LOCUST_MODE=master `
  --rm -d grubykarol/locust:0.8.1-py3.6
 ```
@@ -104,10 +103,10 @@ docker run --name master --hostname master `
 Run slave:
 ```
 docker run --name slave0 `
- --link master --env NO_PROXY=172.17.0.2 `
+ --link master --env NO_PROXY=master `
  -v c:\locust-scripts:/locust `
- -e ATTACKED_HOST=http://172.17.0.2:8089 `
+ -e ATTACKED_HOST=http://master:8089 `
  -e LOCUST_MODE=slave `
- -e LOCUST_MASTER=172.17.0.2 `
- --rm -d grubykarol/locust:0.8.1-py3.6 
+ -e LOCUST_MASTER=master `
+ --rm -d grubykarol/locust:0.8.1-py3.6
 ```
