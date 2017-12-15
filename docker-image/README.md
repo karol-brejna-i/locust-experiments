@@ -53,7 +53,7 @@ Run master:
 docker run --name master --hostname master \
  -p 8089:8089 -p 5557:5557 -p 5558:5558 \
  -v $MY_SCRIPTS:/locust \
- -e ATTACKED_HOST='http://172.17.0.2:8089' \
+ -e ATTACKED_HOST='http://master:8089' \
  -e LOCUST_MODE=master \
  --rm -d grubykarol/locust:0.8.1-py3.6
 ```
@@ -62,20 +62,20 @@ and some slaves:
 
 ```
 docker run --name slave0 \
- --link master --env NO_PROXY=172.17.0.2 \
+ --link master --env NO_PROXY=master \
  -v $MY_SCRIPTS:/locust \
- -e ATTACKED_HOST=http://172.17.0.2:8089 \
+ -e ATTACKED_HOST=http://master:8089 \
  -e LOCUST_MODE=slave \
- -e LOCUST_MASTER=172.17.0.2 \
- --rm -d grubykarol/locust:0.8.1-py3.6 
+ -e LOCUST_MASTER=master \
+ --rm -d grubykarol/locust:0.8.1-py3.6
 
 docker run --name slave1 \
- --link master --env NO_PROXY=172.17.0.2 \
+ --link master --env NO_PROXY=master \
  -v $MY_SCRIPTS:/locust \
- -e ATTACKED_HOST=http://172.17.0.2:8089 \
+ -e ATTACKED_HOST=http://master:8089 \
  -e LOCUST_MODE=slave \
- -e LOCUST_MASTER=172.17.0.2 \
- --rm -d grubykarol/locust:0.8.1-py3.6 
+ -e LOCUST_MASTER=master \
+ --rm -d grubykarol/locust:0.8.1-py3.6
 ```
 
 
@@ -84,7 +84,7 @@ For the real brave, Windows PowerShell version:
 Basic run:
 ```
 docker run --rm --name standalone `
- -e ATTACKED_HOST=http://172.17.0.2:8089 `
+ -e ATTACKED_HOST=http://localhost:8089 `
  -v c:\locust-scripts:/locust `
  -p 8089:8089 -d `
  grubykarol/locust:0.8.1-py3.6
@@ -95,7 +95,7 @@ Run master:
 docker run --name master --hostname master `
  -p 8089:8089 -p 5557:5557 -p 5558:5558 `
  -v c:\locust-scripts:/locust `
- -e ATTACKED_HOST='http://172.17.0.2:8089' `
+ -e ATTACKED_HOST='http://master:8089' `
  -e LOCUST_MODE=master `
  --rm -d grubykarol/locust:0.8.1-py3.6
 ```
@@ -103,10 +103,10 @@ docker run --name master --hostname master `
 Run slave:
 ```
 docker run --name slave0 `
- --link master --env NO_PROXY=172.17.0.2 `
+ --link master --env NO_PROXY=master `
  -v c:\locust-scripts:/locust `
- -e ATTACKED_HOST=http://172.17.0.2:8089 `
+ -e ATTACKED_HOST=http://master:8089 `
  -e LOCUST_MODE=slave `
- -e LOCUST_MASTER=172.17.0.2 `
- --rm -d grubykarol/locust:0.8.1-py3.6 
+ -e LOCUST_MASTER=master `
+ --rm -d grubykarol/locust:0.8.1-py3.6
 ```
