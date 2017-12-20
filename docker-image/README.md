@@ -31,7 +31,7 @@ The image uses the following environment variables to configure its behavior:
 |ATTACKED_HOST | The URL to test. Required. | - | http://example.com |
 |LOCUST_MODE   | Set the mode to run in. Can be `standalone`, `master` or `slave`. | standalone | master |
 |LOCUST_MASTER | Locust master IP or hostname. Required for `slave` mode.| - | 127.0.0.1 |
-|LOCUST_MASTER_PORT | Locust master port. Used in `slave` mode. | 5557 | 6666 |
+|LOCUST_MASTER_BIND_PORT | Locust master port. Used in `slave` mode. | 5557 | 6666 |
 |LOCUST_OPTS| Additional locust CLI options. | - | "-c 10 -r 10" |
 
 
@@ -39,11 +39,11 @@ The image uses the following environment variables to configure its behavior:
 
 Basic run, with folder (path in $MY_SCRIPTS) holding `locustfile.py`:
 ```
-docker run --rm --name standalone -e ATTACKED_HOST=http://localhost:8089 -p 8089:8089 -d -v $MY_SCRIPTS:/locust grubykarol/locust:0.8.1-py3.6
+docker run --rm --name standalone --hostname standalone -e ATTACKED_HOST=http://standalone:8089 -p 8089:8089 -d -v $MY_SCRIPTS:/locust grubykarol/locust:0.8.1-py3.6
 ```
 or, with additional runtime options:
 ```
-docker run --rm --name standalone -e ATTACKED_HOST=http://localhost:8089 -e "LOCUST_OPTS=--no-web" -p 8089:8089 -d -v $MY_SCRIPTS:/locust grubykarol/locust:0.8.1-py3.6
+docker run --rm --name standalone --hostname standalone -e ATTACKED_HOST=http://standalone:8089 -e "LOCUST_OPTS=--no-web" -p 8089:8089 -d -v $MY_SCRIPTS:/locust grubykarol/locust:0.8.1-py3.6
 ```
 
 ### Master-slave
