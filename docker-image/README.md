@@ -39,11 +39,11 @@ The image uses the following environment variables to configure its behavior:
 
 Basic run, with folder (path in $MY_SCRIPTS) holding `locustfile.py`:
 ```
-docker run --rm --name standalone -e ATTACKED_HOST=http://localhost:8089 -p 8089:8089 -d -v $MY_SCRIPTS:/locust grubykarol/locust:0.8.1-py3.6
+docker run --rm --name standalone --hostname standalone -e ATTACKED_HOST=http://standalone:8089 -p 8089:8089 -d -v $MY_SCRIPTS:/locust grubykarol/locust:0.8.1-py3.6
 ```
 or, with additional runtime options:
 ```
-docker run --rm --name standalone -e ATTACKED_HOST=http://localhost:8089 -e "LOCUST_OPTS=--no-web" -p 8089:8089 -d -v $MY_SCRIPTS:/locust grubykarol/locust:0.8.1-py3.6
+docker run --rm --name standalone --hostname standalone -e ATTACKED_HOST=http://standalone:8089 -e "LOCUST_OPTS=--no-web" -p 8089:8089 -d -v $MY_SCRIPTS:/locust grubykarol/locust:0.8.1-py3.6
 ```
 
 ### Master-slave
