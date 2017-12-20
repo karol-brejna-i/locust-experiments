@@ -31,7 +31,7 @@ The image uses the following environment variables to configure its behavior:
 |ATTACKED_HOST | The URL to test. Required. | - | http://example.com |
 |LOCUST_MODE   | Set the mode to run in. Can be `standalone`, `master` or `slave`. | standalone | master |
 |LOCUST_MASTER | Locust master IP or hostname. Required for `slave` mode.| - | 127.0.0.1 |
-|LOCUST_MASTER_PORT | Locust master port. Used in `slave` mode. | 5557 | 6666 |
+|LOCUST_MASTER_BIND_PORT | Locust master port. Used in `slave` mode. | 5557 | 6666 |
 |LOCUST_OPTS| Additional locust CLI options. | - | "-c 10 -r 10" |
 
 
