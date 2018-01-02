@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+    ingress.kubernetes.io/ssl-redirect: "false"
+  name: locust
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: locust-master
+          servicePort: 8089
+        path: /locust
