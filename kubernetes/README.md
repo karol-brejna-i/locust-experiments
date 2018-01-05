@@ -50,5 +50,90 @@ If ran for the first time, it may take a while to complete (if there is no locus
 To see, if locust nodes are running we can inspect if the pods are up:
 
     > kubectl get -w pods
-    
-...    
+    NAME                             READY     STATUS    RESTARTS   AGE
+    locust-master-754dc88dd8-zgs7m   1/1       Running   0          24m
+    locust-slave-7c89bfc5b7-4cms8    1/1       Running   0          24m
+    locust-slave-7c89bfc5b7-f7p4l    1/1       Running   0          24m
+
+From the output we can pick up the master name can also take a look at the logs.
+`kubectl logs locust-master-754dc88dd8-zgs7m` should include the following information:
+
+```
+[2018-01-02 08:05:14,662] locust-master-754dc88dd8-zgs7m/INFO/locust.main: Starting web monitor at *:8089
+[2018-01-02 08:05:14,666] locust-master-754dc88dd8-zgs7m/INFO/locust.main: Starting Locust 0.8.1
+[2018-01-02 08:05:15,741] locust-master-754dc88dd8-zgs7m/INFO/locust.runners: Client 'locust-slave-2800781981-wrbl4_ed388a7a4bd15b51d094ae3afb05dc35' reported as ready. Currently 1 clients ready to swarm.
+[2018-01-02 08:05:16,779] locust-master-754dc88dd8-zgs7m/INFO/locust.runners: Client 'locust-slave-2800781981-cz2n8_74c58b7509b00b5be5d4ab05c4f87abf' reported as ready. Currently 2 clients ready to swarm.
+```
+
+We can see that the master has started (line 1 and 2) and the slaves "volunteer" to do some work (lines 3-4).
+
+# First test run
+Nothing more is happening there, because we still need to tell the master to start the tests. Normally, you'd probably use neat Locust UI for this. You can also take advantage of HTTP API, which is particularly useful for test automation etc. (for example, when you want to start a stress test as a part of your CI/CD pipeline).
+I'll use two master's endpoints here: `/swarm` to start the tests and `/stop` to finish them.
+We have a K8s service defined for the master, so the URLs gonna be:
+* http://locust-master:8089/swarm
+* http://locust-master:8089/stop
+
+Quick note: Kubernetes job is to make sure that containers in the cluster can communicate with each other.
+Please, mind that by default the containers are not accessible externally. So, in order to make the calls, we'll create a short live container which sole role will be to issue a single curl command.
+
+In the deployment scripts we configured locust master to periodically dump activity logs to the console (with print-stats switch) so we can listen to the logs in one terminal (to check the results):
+
+    kubectl logs -f locust-master-754dc88dd8-zgs7m
+
+and start the test in the second one:
+
+    >  kubectl run strzal --image=djbingham/curl --restart='OnFailure' -i --tty --rm --command -- curl -X POST -F 'locust_count=4' -F 'hatch_rate=4' http://locust-master:8089/swarm
+    {"success": true, "message": "Swarming started"}
+
+After some time, stop the test:
+
+    >  kubectl run strzal --image=djbingham/curl --restart='OnFailure' -i --tty --rm --command -- curl http://locust-master:8089/stop
+    {"success": true, "message": "Test stopped"}
+
+For me, all went well, which the following log proves:
+
+```
+ Name                                                          # reqs      # fails     Avg     Min     Max  |  Median   req/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Total                                                              0     0(0.00%)                                       0.00
+
+[2018-01-02 08:10:08,440] locust-master-754dc88dd8-zgs7m/INFO/locust.runners: Sending hatch jobs to 2 ready clients
+ Name                                                          # reqs      # fails     Avg     Min     Max  |  Median   req/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Total                                                              0     0(0.00%)                                       0.00
+
+ Name                                                          # reqs      # fails     Avg     Min     Max  |  Median   req/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET /stats/requests                                                3     0(0.00%)       9       5      14  |       9    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Total                                                              3     0(0.00%)                                       0.00
+
+ Name                                                          # reqs      # fails     Avg     Min     Max  |  Median   req/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET /                                                              3     0(0.00%)      12       4      28  |       5    0.00
+ GET /stats/requests                                                5     0(0.00%)       8       5      14  |       9    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Total                                                              8     0(0.00%)                                       0.00
+
+ Name                                                          # reqs      # fails     Avg     Min     Max  |  Median   req/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET /                                                              5     0(0.00%)       9       4      28  |       4    1.33
+ GET /stats/requests                                               15     0(0.00%)       5       4      14  |       4    2.67
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Total                                                             20     0(0.00%)                                       4.00
+
+ Name                                                          # reqs      # fails     Avg     Min     Max  |  Median   req/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET /                                                              9     0(0.00%)       7       4      28  |       4    1.20
+ GET /stats/requests                                               17     0(0.00%)       5       4      14  |       4    2.80
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Total                                                             26     0(0.00%)                                       4.00
+```
+
+What you can see here is:
+* some inactivity period, stats from before the test was started (lines 1-4)
+* the moment that the master delegated the work to the slaves (line 6)
+* growing number of request (starting from line 7)

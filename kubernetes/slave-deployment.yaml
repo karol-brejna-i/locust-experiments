@@ -10,7 +10,7 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      role: kubernetes-slave
+      role: locust-slave
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -19,7 +19,7 @@ spec:
   template:
     metadata:
       labels:
-        role: kubernetes-slave
+        role: locust-slave
     spec:
       containers:
       - image: grubykarol/locust:0.8.1-py3.6
