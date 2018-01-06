@@ -74,8 +74,10 @@ We have a K8s service defined for the master, so the URLs gonna be:
 * http://locust-master:8089/swarm
 * http://locust-master:8089/stop
 
-Quick note: Kubernetes job is to make sure that containers in the cluster can communicate with each other.
-Please, mind that by default the containers are not accessible externally. So, in order to make the calls, we'll create a short live container which sole role will be to issue a single curl command.
+> Quick note: Kubernetes job is to make sure that containers in the cluster can communicate with each other.
+> Please, mind that by default the containers are not accessible externally. So, in order to make the calls, we'll create a short live container which sole role will be to issue a single curl command.
+> Alternatively, you could use port forwarding to be able to access a pod from your local machine
+> (for example, use `kubectl port-forward locust-master-754dc88dd8-zg7m 8089` and open the browser - `explorer http://localhost:8089` or `xdg-open http://localhost:8089`).
 
 In the deployment scripts we configured locust master to periodically dump activity logs to the console (with print-stats switch) so we can listen to the logs in one terminal (to check the results):
 
