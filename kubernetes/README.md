@@ -137,3 +137,47 @@ What you can see here is:
 * some inactivity period, stats from before the test was started (lines 1-4)
 * the moment that the master delegated the work to the slaves (line 6)
 * growing number of request (starting from line 7)
+
+# External access
+
+As mentioned before, typically, services and pods have addresses only routable by the cluster network.
+You need to put some effort in order to expose them to the outside world.
+Let's examine, how making Locust web console accessible from the internet would work.
+
+The final piece of the  puzzle here is an ingress which is K8s' mechanism that allows inbound connections to reach the cluster services.
+
+> Note: If you are using minikube (as I am), mind that ingress controller is delivered as an add-on, that is not enabled by default. You need to do it yourself. For me, the following command did the trick: `minikube addons enable ingress`
+
+According to this simple rule:
+
+```
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+    ingress.kubernetes.io/ssl-redirect: "false"
+  name: locust
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: locust-master
+          servicePort: 8089
+        path: /locust
+```
+
+`locust-master` service is exposed so the users can reach Locust web UI under `/locust` URL on the host.
+
+Let's create the ingress with `kubectl create -f ingress.yaml` (check the file location in "Cluster deployment" section),
+get the cluster IP with minikube ip (192.168.1.123 in my case) and put expected locust URL in the browser (explorer http://192.168.1.123/locust/).
+Unfortunately, although Locust web page is accessible, it's all mangled and nonfunctional.
+
+It turns out that the URLs for page resources (CSS, js) and the HTTP API are absolute (actually: root-relative).
+By using the ingress we "moved" the page address from the root (`/`) to `/locust` and the page got confused. Programmed this way, Locust cannot be properly accessed via ingress (or put behind a reverse proxy, load balancer for that matter).
+
+# External access - the fix
+Well, Locust.io is an open source project, for good and for bad. Let's make use of it.
+After inspecting the sources, it turns out that the fix (that would allow serving Locust UI under URL different than /) is pretty simple. Take a look at this pull request: https://github.com/locustio/locust/pull/692/files
+When the PR is merged or you build Locust docker image with these changes (see: /docker-url-fix folder in the sources GitHub repository), the UI starts working just fine.

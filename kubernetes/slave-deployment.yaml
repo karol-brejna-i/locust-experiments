@@ -38,13 +38,6 @@ spec:
         volumeMounts:
           - mountPath: /locust
             name: locust-scripts
-        ports:
-        - containerPort: 5557
-          name: comm
-        - containerPort: 5558
-          name: comm-plus-1
-        - containerPort: 8089
-          name: web-ui
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
