@@ -61,8 +61,8 @@ From the output we can pick up the master name can also take a look at the logs.
 ```
 [2018-01-02 08:05:14,662] locust-master-754dc88dd8-zgs7m/INFO/locust.main: Starting web monitor at *:8089
 [2018-01-02 08:05:14,666] locust-master-754dc88dd8-zgs7m/INFO/locust.main: Starting Locust 0.8.1
-[2018-01-02 08:05:15,741] locust-master-754dc88dd8-zgs7m/INFO/locust.runners: Client 'locust-slave-2800781981-wrbl4_ed388a7a4bd15b51d094ae3afb05dc35' reported as ready. Currently 1 clients ready to swarm.
-[2018-01-02 08:05:16,779] locust-master-754dc88dd8-zgs7m/INFO/locust.runners: Client 'locust-slave-2800781981-cz2n8_74c58b7509b00b5be5d4ab05c4f87abf' reported as ready. Currently 2 clients ready to swarm.
+[2018-01-02 08:05:15,741] locust-master-754dc88dd8-zgs7m/INFO/locust.runners: Client 'locust-slave-7c89bfc5b7-4cms8_ed388a7a4bd15b51d094ae3afb05dc35' reported as ready. Currently 1 clients ready to swarm.
+[2018-01-02 08:05:16,779] locust-master-754dc88dd8-zgs7m/INFO/locust.runners: Client 'locust-slave-7c89bfc5b7-f7p4l_74c58b7509b00b5be5d4ab05c4f87abf' reported as ready. Currently 2 clients ready to swarm.
 ```
 
 We can see that the master has started (line 1 and 2) and the slaves "volunteer" to do some work (lines 3-4).
@@ -171,13 +171,16 @@ spec:
 `locust-master` service is exposed so the users can reach Locust web UI under `/locust` URL on the host.
 
 Let's create the ingress with `kubectl create -f ingress.yaml` (check the file location in "Cluster deployment" section),
-get the cluster IP with minikube ip (192.168.1.123 in my case) and put expected locust URL in the browser (explorer http://192.168.1.123/locust/).
-Unfortunately, although Locust web page is accessible, it's all mangled and nonfunctional.
+get the cluster IP with minikube ip (192.168.1.123 in my case) and put expected locust URL in the browser (`explorer http://192.168.1.123/locust/`).
+
+**Unfortunately, although Locust web page is accessible, it's all mangled and nonfunctional.**
 
 It turns out that the URLs for page resources (CSS, js) and the HTTP API are absolute (actually: root-relative).
 By using the ingress we "moved" the page address from the root (`/`) to `/locust` and the page got confused. Programmed this way, Locust cannot be properly accessed via ingress (or put behind a reverse proxy, load balancer for that matter).
 
 # External access - the fix
 Well, Locust.io is an open source project, for good and for bad. Let's make use of it.
+
 After inspecting the sources, it turns out that the fix (that would allow serving Locust UI under URL different than /) is pretty simple. Take a look at this pull request: https://github.com/locustio/locust/pull/692/files
+
 When the PR is merged or you build Locust docker image with these changes (see: /docker-url-fix folder in the sources GitHub repository), the UI starts working just fine.
