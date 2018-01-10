@@ -1,0 +1,223 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scripts-cm
+data:
+  kubernetes.py: |
+    # -*- coding: utf-8 -*-
+    """Module kubernetes.
+
+    This module allows to communicate with kubernetes API from inside a pod.
+    """
+
+    import os
+    import requests
+
+
+    class KubernetesService:
+        KUBERNETES_SERVICE_HOST = os.environ.get("KUBERNETES_SERVICE_HOST")
+        KUBERNETES_PORT_443_TCP_PORT = os.environ.get("KUBERNETES_PORT_443_TCP_PORT")
+        KUBERNETES_URL = f"https://{KUBERNETES_SERVICE_HOST}:{KUBERNETES_PORT_443_TCP_PORT}"
+        TOKEN_PATH = "/var/run/secrets/kubernetes.io/serviceaccount/token"
+
+        def __init__(self):
+            self.auth_token = self._get_token()
+            self.headers = {
+                'Authorization': f'Bearer {self.auth_token}',
+                'Content-Type': 'application/json-patch+json',
+            }
+
+        @staticmethod
+        def _read_from_file(path):
+            with open(path) as f:
+                read_data = f.read()
+            return read_data
+
+        def _get_token(self):
+            return self._read_from_file(self.TOKEN_PATH)
+
+        def _get_scale_endpoint(self, namespace, deployment):
+            return f"{self.KUBERNETES_URL}/apis/extensions/v1beta1/namespaces/{namespace}/deployments/{deployment}/scale"
+
+        def rescale(self, namespace, deployment, replicas_count: int):
+            """
+            :param namespace: name of the namespace to work in
+            :param deployment: the name of deployment to be rescaled
+            :param replicas_count: target number of workers
+            :return:
+            """
+            data = '[{"op":"replace","path":"/spec/replicas","value":' + str(replicas_count) + '}]'
+            endpoint = self._get_scale_endpoint(namespace, deployment)
+            try:
+                result = requests.patch(endpoint, headers=self.headers, data=data, verify=False)
+            except Exception as e:
+                print(f"Error. {e}")
+                result = None
+
+            return result
+  locustfile.py: |
+    # -*- coding: utf-8 -*-
+    """Main module.
+
+    This module contains code that illustrates ability to extend Locust UI.
+    It includes:
+    * new web routes
+    * a simple test
+    """
+
+    from locust import HttpLocust, TaskSet, task, web, runners
+    from locust.runners import MasterLocustRunner
+    from locust import __version__ as version
+    from jinja2 import Environment, FileSystemLoader
+    from flask import request, redirect
+    from kubernetes import *
+
+    DEPLOYMENT = "locust-slave"
+    NAMESPACE = "default"
+    HTML_TEMPLATE = 'rescale-form.html'
+    WORK_DIR = os.path.dirname(__file__)
+
+    k8s_service = KubernetesService()
+
+
+    def generate_form():
+        j2_env = Environment(loader=FileSystemLoader(WORK_DIR), trim_blocks=True)
+
+        if runners.locust_runner.host:
+            host = runners.locust_runner.host
+            # TODO try suggestion from pylint: Instead of comparing the length to 0,
+            # rely on the fact that empty sequences are false.
+        elif len(runners.locust_runner.locust_classes) > 0:
+            host = runners.locust_runner.locust_classes[0].host
+        else:
+            host = None
+
+        is_distributed = isinstance(runners.locust_runner, MasterLocustRunner)
+        if is_distributed:
+            slave_count = runners.locust_runner.slave_count
+        else:
+            slave_count = 0
+        print("is_distributed: " + str(is_distributed))
+        print("salve_count: " + str(slave_count))
+        print("    user_count=runners.locust_runner.user_count: " + str(runners.locust_runner.user_count))
+        result = j2_env.get_template(HTML_TEMPLATE).render(
+            state=runners.locust_runner.state,
+            is_distributed=is_distributed,
+            user_count=runners.locust_runner.user_count,
+            version=version,
+            host=host,
+            slave_count=slave_count
+         )
+
+        return result
+
+
+    @web.app.route("/rescale-form")
+    def cluster_rescale_form():
+        print("entering cluster rescale form")
+        return generate_form()
+
+
+    @web.app.route("/rescale", methods=['POST'])
+    def rescale_action():
+        worker_count = request.values.get("worker_count")
+
+        k8s_response = k8s_service.rescale(NAMESPACE, DEPLOYMENT, worker_count)
+        # TODO add response code handling
+        print("rescale response: " + str(k8s_response))
+        print("response.text: " + k8s_response.text)
+
+
+        return redirect("/", 302)
+
+
+    class UserTasks(TaskSet):
+        @task
+        def index(self):
+            self.client.get("/")
+
+        @task
+        def stats(self):
+            self.client.get("/stats/requests")
+
+
+    class WebsiteUser(HttpLocust):
+        """
+        Locust user class that does requests to the locust web server
+        """
+        task_set = UserTasks
+  rescale-form.html: |-
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Locust</title>
+        <link rel="stylesheet" type="text/css" href="./static/style.css?v={{ version }}" media="screen">
+        <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon"/>
+    </head>
+    <body class="{{state}}">
+    <div class="top">
+        <div class="top-content container">
+            <img src="./static/img/logo.png?v={{ version }}" class="logo" />
+            <div class="boxes">
+                <div class="top_box box_url">
+                    <div class="label">HOST</div>
+                    <div class="value" id="host_url">
+                        {{host}}
+                    </div>
+                </div>
+                <div class="top_box box_status">
+                    <div class="label">STATUS</div>
+                    <div class="value" id="status_text">
+                        {{state}}
+                    </div>
+                    <div class="user_count">
+                        <span id="userCount">{{user_count}}</span> users
+                    </div>
+                    <a href="#" class="new_test" id="new_test">New test</a>
+                    <a href="#" class="edit_test">Edit</a>
+                </div>
+                {% if is_distributed %}
+                <div class="top_box box_slaves" id="box_slaves">
+                    <div class="label">SLAVES</div>
+                    <div class="value" id="slaveCount">{{slave_count}}</div>
+                </div>
+                {% endif %}
+                <div class="top_box box_rps box_running" id="box_rps">
+                    <div class="label">RPS</div>
+                    <div class="value" id="total_rps">0</div>
+                </div>
+                <div class="top_box box_fail box_running" id="box_fail">
+                    <div class="label">FAILURES</div>
+                    <div class="value"><span id="fail_ratio"></span>%</div>
+                </div>
+                <div class="top_box box_stop box_running" id="box_stop">
+                    <a href="./stop" class="stop-button"><i></i>STOP</a>
+                    <a href="./stats/reset" class="reset-button">Reset<br>Stats</a>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="status" id="status" style="display:block">
+            <div>
+                <h2>Enter new number of workers (be careful!)</h2>
+                <form action="./rescale" method="POST" id="rescale_form">
+                    <label for="worker_count">Number of workers in the cluster</label>
+                    <input type="text" name="worker_count" id="worker_count" class="val" /><br>
+                    <button type="submit">Rescale</button>
+                </form>
+                <div style="clear:right;"></div>
+            </div>
+        </div>
+    </div>
+    <nav class="footer">
+        <div class="container">
+        </div>
+    </nav>
+
+    <script type="text/javascript" src="./static/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./static/jquery.jqote2.min.js"></script>
+    <script type="text/javascript" src="./static/jquery.tools.min.js"></script>
+    </body>
+    </html>
