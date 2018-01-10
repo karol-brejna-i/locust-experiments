@@ -10,7 +10,7 @@ The authors also claim that it's very easy to use and to extend Locust. So, inst
 I decided to give it a quick try and try to address potential needs/problems with series of quick experiments.
 
 Some of the things I would like to confirm are:
-* Running on Kubernetes (but first [in the docker](docker-image/))
+* Running [on Kubernetes](kubernetes/) (but first [in the docker](docker-image/))
 * Testing non-REST apps
 * Dealing with long-running requests
 * Capturing atomic results (now Locust saves pre-aggregated results)
