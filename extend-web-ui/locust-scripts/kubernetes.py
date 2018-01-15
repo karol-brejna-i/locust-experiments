@@ -40,7 +40,7 @@ class KubernetesService:
         :param replicas_count: target number of workers
         :return:
         """
-        data = '[{"op":"replace","path":"/spec/replicas","value":' + str(replicas_count) + '}]'
+        data = f'[{{"op":"replace","path":"/spec/replicas","value": {replicas_count}}}]'
         endpoint = self._get_scale_endpoint(namespace, deployment)
         try:
             result = requests.patch(endpoint, headers=self.headers, data=data, verify=False)
