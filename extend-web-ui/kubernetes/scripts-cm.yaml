@@ -46,7 +46,7 @@ data:
             :param replicas_count: target number of workers
             :return:
             """
-            data = '[{"op":"replace","path":"/spec/replicas","value":' + str(replicas_count) + '}]'
+            data = f'[{{"op":"replace","path":"/spec/replicas","value": {replicas_count}}}]'
             endpoint = self._get_scale_endpoint(namespace, deployment)
             try:
                 result = requests.patch(endpoint, headers=self.headers, data=data, verify=False)
@@ -93,13 +93,9 @@ data:
             host = None
 
         is_distributed = isinstance(runners.locust_runner, MasterLocustRunner)
-        if is_distributed:
-            slave_count = runners.locust_runner.slave_count
-        else:
-            slave_count = 0
-        print("is_distributed: " + str(is_distributed))
-        print("salve_count: " + str(slave_count))
-        print("    user_count=runners.locust_runner.user_count: " + str(runners.locust_runner.user_count))
+        slave_count = runners.locust_runner.slave_count if is_distributed else 0
+        print(f"salve_count: {slave_count}")
+
         result = j2_env.get_template(HTML_TEMPLATE).render(
             state=runners.locust_runner.state,
             is_distributed=is_distributed,
@@ -124,9 +120,9 @@ data:
 
         k8s_response = k8s_service.rescale(NAMESPACE, DEPLOYMENT, worker_count)
         # TODO add response code handling
-        print("rescale response: " + str(k8s_response))
-        print("response.text: " + k8s_response.text)
 
+        print(f"rescale response {k8s_response}")
+        print(f"response.text: {k8s_response.text}")
 
         return redirect("/", 302)
 
