@@ -63,8 +63,6 @@ def rescale_action():
     k8s_response = k8s_service.rescale(NAMESPACE, DEPLOYMENT, worker_count)
     # TODO add response code handling
 
-    #print("rescale response: " + str(k8s_response))
-    #print("response.text: " + k8s_response.text)
     print(f"rescale response {k8s_response}")
     print(f"response.text: {k8s_response.text}")
 

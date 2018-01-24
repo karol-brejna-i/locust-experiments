@@ -1,4 +1,4 @@
-This work bases on previous experiment which point was to create Kubernets scripts for Locust.
+This work depends on previous experiment which point was to create Kubernetes scripts for Locust.
 
 Basic K8s mechanics here are intact, the difference being the config map that holds Locust scripts.
 
