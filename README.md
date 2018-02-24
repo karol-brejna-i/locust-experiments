@@ -11,7 +11,7 @@ I decided to give it a quick try and try to address potential needs/problems wit
 
 Some of the things I would like to confirm are:
 * Running [on Kubernetes](kubernetes/) (but first [in the docker](docker-image/))
-* [Extending Web UI](extend-web-ui)
+* [Extending Web UI](extend-web-ui/)
 * Testing non-REST apps
 * Dealing with long-running requests
 * Capturing atomic results (now Locust saves pre-aggregated results)
