@@ -13,13 +13,13 @@ events.request_failure += additional_failure_handler
 
 class CustomLocust(Locust):
     """
-    This is the abstract Locust class which should be subclassed. It provides an XML-RPC client
-    that can be used to make XML-RPC requests that will be tracked in Locust's statistics.
+    This is the abstract Locust class which should be subclassed. It provides an custom client
+    that can be used to make requests that will be tracked in Locust's statistics.
     """
 
     def __init__(self, *args, **kwargs):
         super(CustomLocust, self).__init__(*args, **kwargs)
-        self.client = CustomClient(self.host, 997)
+        self.client = CustomClient("broker", 997)
 
 
 class CustomUserBehaviour(TaskSet):
@@ -50,8 +50,6 @@ class WebUser(HttpLocust):
     """
     Locust user class that does requests to the locust web server
     """
-    min_wait = 2000
-    max_wait = 5000
     task_set = WebUserBehaviour
 
 
@@ -59,6 +57,4 @@ class CustomUser(CustomLocust):
     """
     Locust user class that does requests to the locust web server
     """
-    min_wait = 2000
-    max_wait = 5000
     task_set = CustomUserBehaviour

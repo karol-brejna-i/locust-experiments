@@ -16,17 +16,19 @@ def custom_timer(func):
         previous_frame = inspect.currentframe().f_back
         (filename, line_number, function_name, lines, index) = inspect.getframeinfo(previous_frame)
 
+        topic = args[1]
+        request_name = f"{func.__name__} {topic}"
         start_time = time.time()
         result = None
         try:
             result = func(*args, **kwargs)
         except Exception as e:
             total_time = int((time.time() - start_time) * 1000)
-            events.request_failure.fire(request_type="CUSTOM", name=func.__name__,
+            events.request_failure.fire(request_type="CUSTOM", name=request_name,
                                         response_time=total_time, exception=e, tag=function_name)
         else:
             total_time = int((time.time() - start_time) * 1000)
-            events.request_success.fire(request_type="CUSTOM", name=func.__name__,
+            events.request_success.fire(request_type="CUSTOM", name=request_name,
                                         response_time=total_time, response_length=0, tag=function_name)
         return result
 
@@ -55,7 +57,7 @@ class CustomClient:
     @custom_timer
     def push(self, topic):
         """ push message using custom protocol """
-        print(f"Making a virtual data push to ${topic}")
+        print(f"Making a virtual data push to {topic}")
         # simulate execution time
         self._sleep()
         # simulate success/failure
@@ -64,7 +66,7 @@ class CustomClient:
     @custom_timer
     def pull(self, topic):
         """ pull message using custom protocol """
-        print("Making a virtual data pull from ${topic}")
+        print(f"Making a virtual data pull from {topic}")
         # simulate execution time
         self._sleep()
         # simulate success/failure
