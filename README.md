@@ -12,10 +12,10 @@ I decided to give it a quick try and try to address potential needs/problems wit
 Some of the things I would like to confirm are:
 * Running [on Kubernetes](kubernetes/) (but first [in the docker](docker-image/))
 * [Extending Web UI](extend-web-ui/)
-* Testing non-REST apps
+* [Testing non-REST apps](enriching-results/)
 * Dealing with long-running requests
-* Capturing atomic results (now Locust saves pre-aggregated results)
-* Enriching test result data (tags, etc.)
+* Capturing atomic results (now Locust saves pre-aggregated results) - part of [Testing non-REST apps](enriching-results/)
+* Enriching test result data (tags, etc.) - part of [Testing non-REST apps](enriching-results/)
 * Emitting the result to external data store
 
 This repo holds results of particular experiments.
