@@ -1,0 +1,145 @@
+apiVersion: v1
+data:
+  additional_handlers.py: |
+    """ additional Locust handlers """
+    import json
+
+    OK_TEMPLATE = '{"request_type":"%s", "name":"%s", "result":"%s", ' \
+                  '"response_time":"%s", "response_length":"%s", "other":%s}'
+
+    ERR_TEMPLATE = '{"request_type":"%s", "name":"%s", "result":"%s", ' \
+                   '"response_time":"%s", "exception":"%s", "other":%s}'
+
+
+    def additional_success_handler(request_type, name, response_time, response_length, **kwargs):
+        """ additional request success handler to log statistics """
+        print(OK_TEMPLATE % (request_type, name, "OK", response_time, response_length, json.dumps(kwargs)))
+
+
+    def additional_failure_handler(request_type, name, response_time, exception, **kwargs):
+        """ additional request failure handler to log statistics """
+        print(ERR_TEMPLATE % (request_type, name, "ERR", response_time, exception,  json.dumps(kwargs)))
+  kafka_client.py: |
+    import time
+
+    from kafka import KafkaProducer
+    from locust import events
+
+
+    class KafkaClient:
+
+        def __init__(self, kafka_brokers=None):
+            print("creating message sender with params: " + str(locals()))
+
+            if kafka_brokers is None:
+                kafka_brokers = ['localhost:9092']
+            self.producer = KafkaProducer(bootstrap_servers=kafka_brokers)
+
+        def __handle_success(self, *arguments, **kwargs):
+            end_time = time.time()
+
+            try:
+                record_metadata = kwargs["future"].get(timeout=1)
+                elapsed_time = int((end_time - kwargs["start_time"]) * 1000)
+
+                request_data = dict(request_type="ENQUEUE",
+                                    name=record_metadata.topic,
+                                    response_time=elapsed_time,
+                                    response_length=record_metadata.serialized_value_size)
+
+                self.__fire_success(**request_data)
+            except Exception as ex:
+                print("Logging the exception : {0}".format(ex))
+                raise  # ??
+
+        def __handle_failure(self, *arguments, **kwargs):
+            print("failure " + str(locals()))
+            end_time = time.time()
+            elapsed_time = int((end_time - kwargs["start_time"]) * 1000)
+
+            topic = kwargs["topic"]
+
+            request_data = dict(request_type="ENQUEUE", name=topic, response_time=elapsed_time, exception=arguments[0])
+
+            self.__fire_failure(**request_data)
+
+        def __fire_failure(self, **kwargs):
+            events.request_failure.fire(**kwargs)
+
+        def __fire_success(self, **kwargs):
+            events.request_success.fire(**kwargs)
+
+        def send(self, topic, key=None, message=None):
+            start_time = time.time()
+            future = self.producer.send(topic, key=key.encode() if key else None,
+                                        value=message.encode() if message else None)
+            future.add_callback(self.__handle_success, start_time=start_time, future=future)
+            future.add_errback(self.__handle_failure, start_time=start_time, topic=topic)
+
+        def finalize(self):
+            print("flushing the messages")
+            self.producer.flush(timeout=5)
+            print("flushing finished")
+  locustfile.py: |
+    import os
+    import string
+    import random
+
+    import time
+    from locust import TaskSet, task, events, Locust
+
+    from additional_handlers import additional_success_handler, additional_failure_handler
+    from kafka_client import KafkaClient
+
+    WORK_DIR = os.path.dirname(__file__)
+
+    # read kafka brokers from config
+    KAFKA_BROKERS = os.getenv("KAFKA_BROKERS", "kafka:9092").split(sep=",")
+
+    # read other environment variables
+    QUIET_MODE = True if os.getenv("QUIET_MODE", "true").lower() in ['1', 'true', 'yes'] else False
+    TASK_DELAY = os.getenv("TASK_DELAY", 0)
+
+    # register additional logging handlers
+    if not QUIET_MODE:
+        events.request_success += additional_success_handler
+        events.request_failure += additional_failure_handler
+
+
+    class KafkaLocust(Locust):
+        client = None
+
+        def __init__(self, *args, **kwargs):
+            super(KafkaLocust, self).__init__(*args, **kwargs)
+            if not KafkaLocust.client:
+                KafkaLocust.client = KafkaClient(KAFKA_BROKERS)
+
+
+    class KafkaBehaviour(TaskSet):
+
+        def random_message(self, min_length=32, max_length=128):
+            return ''.join(random.choice(string.ascii_uppercase) for _ in range(random.randrange(min_length, max_length)))
+
+        def timestamped_message(self):
+            return f"{time.time() * 1000}:" + ("kafka" * 24)[:random.randint(32, 128)]
+
+        @task
+        def task1(self):
+            self.client.send("test-topic", message=self.timestamped_message())
+
+        @task
+        def task2(self):
+            self.client.send("test-topic", message=self.timestamped_message(), key="key")
+
+
+    class KafkaUser(KafkaLocust):
+        """
+        Locust user class that pushes messages to Kafka
+        """
+        task_set = KafkaBehaviour
+        min_wait = TASK_DELAY
+        max_wait = TASK_DELAY
+kind: ConfigMap
+metadata:
+  name: scripts-cm
+  namespace: default
