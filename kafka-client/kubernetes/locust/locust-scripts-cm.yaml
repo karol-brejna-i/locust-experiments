@@ -37,10 +37,9 @@ data:
 
         def __handle_success(self, *arguments, **kwargs):
             end_time = time.time()
-
+            elapsed_time = int((end_time - kwargs["start_time"]) * 1000)
             try:
                 record_metadata = kwargs["future"].get(timeout=1)
-                elapsed_time = int((end_time - kwargs["start_time"]) * 1000)
 
                 request_data = dict(request_type="ENQUEUE",
                                     name=record_metadata.topic,
@@ -57,9 +56,8 @@ data:
             end_time = time.time()
             elapsed_time = int((end_time - kwargs["start_time"]) * 1000)
 
-            topic = kwargs["topic"]
-
-            request_data = dict(request_type="ENQUEUE", name=topic, response_time=elapsed_time, exception=arguments[0])
+            request_data = dict(request_type="ENQUEUE", name=kwargs["topic"], response_time=elapsed_time,
+                                exception=arguments[0])
 
             self.__fire_failure(**request_data)
 
@@ -82,10 +80,10 @@ data:
             print("flushing finished")
   locustfile.py: |
     import os
-    import string
     import random
-
+    import string
     import time
+
     from locust import TaskSet, task, events, Locust
 
     from additional_handlers import additional_success_handler, additional_failure_handler

@@ -15,10 +15,9 @@ class KafkaClient:
 
     def __handle_success(self, *arguments, **kwargs):
         end_time = time.time()
-
+        elapsed_time = int((end_time - kwargs["start_time"]) * 1000)
         try:
             record_metadata = kwargs["future"].get(timeout=1)
-            elapsed_time = int((end_time - kwargs["start_time"]) * 1000)
 
             request_data = dict(request_type="ENQUEUE",
                                 name=record_metadata.topic,
@@ -35,9 +34,8 @@ class KafkaClient:
         end_time = time.time()
         elapsed_time = int((end_time - kwargs["start_time"]) * 1000)
 
-        topic = kwargs["topic"]
-
-        request_data = dict(request_type="ENQUEUE", name=topic, response_time=elapsed_time, exception=arguments[0])
+        request_data = dict(request_type="ENQUEUE", name=kwargs["topic"], response_time=elapsed_time,
+                            exception=arguments[0])
 
         self.__fire_failure(**request_data)
 

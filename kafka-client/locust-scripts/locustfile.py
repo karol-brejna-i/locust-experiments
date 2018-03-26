@@ -1,8 +1,8 @@
 import os
-import string
 import random
-
+import string
 import time
+
 from locust import TaskSet, task, events, Locust
 
 from additional_handlers import additional_success_handler, additional_failure_handler
