@@ -39,6 +39,11 @@ spec:
               configMapKeyRef:
                 key: QUIET_MODE
                 name: locust-cm
+          - name: TASK_DELAY
+            valueFrom:
+              configMapKeyRef:
+                key: TASK_DELAY
+                name: locust-cm
         ports:
           - containerPort: 5557
             name: comm

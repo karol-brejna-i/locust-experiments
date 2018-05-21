@@ -7,5 +7,5 @@ data:
   KAFKA_BROKERS: "kafka:9092"
   OUTPUT_TOPIC: "test-topic"
   QUIET_MODE: "true"
-  TASK_DELAY: "0"
+  TASK_DELAY: "10"
 

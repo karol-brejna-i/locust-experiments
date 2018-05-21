@@ -15,7 +15,8 @@ KAFKA_BROKERS = os.getenv("KAFKA_BROKERS", "kafka:9092").split(sep=",")
 
 # read other environment variables
 QUIET_MODE = True if os.getenv("QUIET_MODE", "true").lower() in ['1', 'true', 'yes'] else False
-TASK_DELAY = os.getenv("TASK_DELAY", 0)
+TASK_DELAY = int(os.getenv("TASK_DELAY", "0"))
+print("task delay", type(TASK_DELAY))
 
 # register additional logging handlers
 if not QUIET_MODE:
