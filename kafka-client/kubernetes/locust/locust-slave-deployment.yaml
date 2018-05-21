@@ -1,0 +1,60 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  labels:
+    role: locust-slave
+  name: locust-slave
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      role: locust-slave
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        role: locust-slave
+    spec:
+      containers:
+      - image: grubykarol/locust:0.8.1-py3.6-kafka
+        imagePullPolicy: IfNotPresent
+        name: locust-slave
+        env:
+          - name: ATTACKED_HOST
+            valueFrom:
+              configMapKeyRef:
+                key: ATTACKED_HOST
+                name: locust-cm
+          - name: LOCUST_MODE
+            value: SLAVE
+          - name: LOCUST_MASTER
+            value: locust-master
+          - name: QUIET_MODE
+            valueFrom:
+              configMapKeyRef:
+                key: QUIET_MODE
+                name: locust-cm
+          - name: TASK_DELAY
+            valueFrom:
+              configMapKeyRef:
+                key: TASK_DELAY
+                name: locust-cm
+        volumeMounts:
+          - mountPath: /locust
+            name: locust-scripts
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+        - name: locust-scripts
+          configMap:
+            name: scripts-cm

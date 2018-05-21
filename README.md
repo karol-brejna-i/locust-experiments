@@ -17,6 +17,7 @@ Some of the things I would like to confirm are:
 * Capturing atomic results (now Locust saves pre-aggregated results) - part of [Testing non-REST apps](enriching-results/)
 * Enriching test result data (tags, etc.) - part of [Testing non-REST apps](enriching-results/)
 * Emitting the result to external data store
+* [Sending messages to Apache Kafka](kafka-client/)
 
 This repo holds results of particular experiments.
 

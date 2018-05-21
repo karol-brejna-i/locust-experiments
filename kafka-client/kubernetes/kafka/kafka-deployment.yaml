@@ -1,0 +1,37 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    role: kafka
+  name: kafka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      role: kafka
+  template:
+    metadata:
+      labels:
+        role: kafka
+    spec:
+      containers:
+      - name: kafka
+        image: "docker.io/debezium/kafka:0.7.5"
+        env:
+        - name: KAFKA_ADVERTISED_PORT
+          value: '9092'
+        - name: KAFKA_ADVERTISED_HOST_NAME
+          value: kafka
+        - name: KAFKA_ZOOKEEPER_CONNECT
+          value: zookeeper:2181
+        - name: KAFKA_PORT
+          value: '9092'
+        - name: KUBERNETES_NAMESPACE
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+        ports:
+        - containerPort: 9092
+          name: plaintext
+          protocol: TCP
