@@ -1,0 +1,35 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    role: zookeeper
+  name: zookeeper
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      role: zookeeper
+  template:
+    metadata:
+      labels:
+        role: zookeeper
+    spec:
+      containers:
+      - name: zookeeper
+        image: "docker.io/debezium/zookeeper:0.7.5"
+        env:
+        - name: KUBERNETES_NAMESPACE
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+        ports:
+        - containerPort: 3888
+          name: election
+          protocol: TCP
+        - containerPort: 2888
+          name: peer
+          protocol: TCP
+        - containerPort: 2181
+          name: client
+          protocol: TCP

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    role: zookeeper
+  name: zookeeper
+spec:
+  ports:
+  - port: 2181
+  selector:
+    role: zookeeper
