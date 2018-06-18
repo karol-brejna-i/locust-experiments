@@ -18,6 +18,8 @@ Some of the things I would like to confirm are:
 * Enriching test result data (tags, etc.) - part of [Testing non-REST apps](enriching-results/)
 * Emitting the result to external data store
 * [Sending messages to Apache Kafka](kafka-client/)
+* [Distributing test data to be used by the slaves](./feeding-locusts)
 
 This repo holds results of particular experiments.
 
+Much of the staff included here is described here: https://medium.com/locust-io-experiments. 

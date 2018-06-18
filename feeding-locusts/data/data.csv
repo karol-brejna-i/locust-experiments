@@ -1,0 +1,1001 @@
+Number,Id,Name,Title,Fed,Elo,NElo,Born,flag,Games,Club/City,#Trns
+1,1503014,"Carlsen, Magnus",GM,Norway,2845,,1990,,,OSG Baden-Baden,230
+2,2020009,"Caruana, Fabiano",GM,USA,2828,,1992,,,,987
+3,8603677,"Ding, Liren",GM,China,2812,,1992,,,,144
+4,4100018,"Kasparov, Garry",GM,Russia,2812,,1963,i,,,10
+5,24116068,"Giri, Anish",GM,Netherlands,2797,,1994,,,Schachgesellschaft S,238
+6,13401319,"Mamedyarov, Shakhriyar",GM,Azerbaijan,2790,,1985,,,,190
+7,11000000011,"Fischer, Robert James",GM,USA,2785,,1943,i,,,0
+8,5000017,"Anand, Viswanathan",GM,India,2779,,1969,,,OSG Baden-Baden,145
+9,623539,"Vachier-Lagrave, Maxime",GM,France,2775,,1990,,,OSG Baden-Baden,289
+10,4126025,"Grischuk, Alexander",GM,Russia,2771,,1983,,,,158
+11,4168119,"Nepomniachtchi, Ian",GM,Russia,2771,,1990,,,,169
+12,5202213,"So, Wesley",GM,USA,2762,,1993,,,,163
+13,13300474,"Aronian, Levon",GM,Armenia,2761,,1982,,,OSG Baden-Baden,223
+14,8603820,"Yu, Yangyi",GM,China,2761,,1994,,,,165
+15,13400924,"Radjabov, Teimour",GM,Azerbaijan,2756,,1987,,,,126
+16,4101588,"Kramnik, Vladimir",GM,Russia,2753,,1975,,,,109
+17,14109603,"Karjakin, Sergey",GM,Russia,2753,,1990,,,,178
+18,2016192,"Nakamura, Hikaru",GM,USA,2746,,1987,,,Missouri,204
+19,2900084,"Topalov, Veselin",GM,Bulgaria,2740,,1975,,,,83
+20,3503240,"Dominguez Perez, Leinier",GM,USA,2739,,1983,i,,,135
+21,309095,"Navara, David",GM,Czech Republic,2739,,1985,,,Schachverein Muelhei,327
+22,738590,"Rapport, Richard",GM,Hungary,2738,,1996,,,OSG Baden-Baden,221
+23,4102142,"Svidler, Peter",GM,Russia,2737,,1976,,,OSG Baden-Baden,237
+24,13400630,"Gashimov, Vugar",GM,Azerbaijan,2737,,1986,i,,,96
+25,24101605,"Artemiev, Vladislav",GM,Russia,2736,,1998,,,Sfr. Bad Emstal/Wolf,96
+26,8603405,"Wei, Yi",GM,China,2733,,1999,,,,129
+27,2004887,"Shankland, Samuel",GM,USA,2731,,1991,,,SV Hockenheim,124
+28,8601445,"Bu, Xiangzhi",GM,China,2731,,1985,,,,185
+29,1170546,"Duda, Jan-Krzysztof",GM,Poland,2731,,1998,,,MKS MOS Wieliczka,104
+30,5007003,"Harikrishna, Pentala",GM,India,2730,,1986,,,Schachgesellschaft S,205
+31,4152956,"Vitiugov, Nikita",GM,Russia,2726,,1987,,,SV Hockenheim,213
+32,4158814,"Andreikin, Dmitry",GM,Russia,2725,,1990,,,,155
+33,1118358,"Wojtaszek, Radoslaw",GM,Poland,2722,,1987,,,OSG Baden-Baden,249
+34,4122356,"Jakovenko, Dmitry",GM,Russia,2719,,1983,,,SK Schwaebisch Hall,217
+35,8602883,"Wang, Hao",GM,China,2718,,1989,,,,191
+36,12401137,"Le, Quang Liem",GM,Vietnam,2715,,1991,,,,165
+37,24130737,"Fedoseev, Vladimier",GM,Russia,2715,,1995,,,SV Hockenheim,169
+38,5029465,"Vidit, Santosh Gujrathi",GM,India,2711,,1994,,,,133
+39,4650891,"Naiditsch, Arkadij",GM,Azerbaijan,2710,,1985,,,OSG Baden-Baden,352
+40,10601457,"Amin, Bassem",GM,Egypt,2709,,1988,,,SC Viernheim 1934 e.,185
+41,400041,"Adams, Michael",GM,England,2708,,1971,,,OSG Baden-Baden,223
+42,4147235,"Tomashevsky, Evgeny",GM,Russia,2705,,1987,,,SV Hockenheim,141
+43,11000000008,"Tal, Mikhail",GM,Soviet Union,2705,,1936,i,,,0
+44,14508150,"Saric, Ivan",GM,Croatia,2703,,1990,,,SV Hockenheim,245
+45,24126055,"Dubov, Daniil",GM,Russia,2703,,1996,,,SAbt SV Werder Breme,144
+46,13504398,"Kovalev, Vladislav",GM,Belarus,2703,,1994,,,Minsk,185
+47,13401653,"Mamedov, Rauf",GM,Azerbaijan,2701,,1988,,,,185
+48,8604436,"Li, Chao B",GM,China,2699,,1989,,,SK Schwaebisch Hall,184
+49,2205530,"Vallejo Pons, Francisco",GM,Spain,2698,,1982,,,OSG Baden-Baden,226
+50,14100010,"Ivanchuk, Vassily",GM,Ukraine,2698,,1969,,,DJK Aufwaerts St. Jo,271
+51,2809052,"Nabaty, Tamir",GM,Israel,2697,,1991,,,,151
+52,1610856,"Ragger, Markus",GM,Austria,2696,,1988,,,Schachgesellschaft S,306
+53,1710400,"Grandelius, Nils",GM,Sweden,2694,,1993,,,Hamburger SK von 183,255
+54,410608,"Howell, David W L",GM,England,2693,,1990,,,SV Hockenheim,200
+55,4162722,"Inarkiev, Ernesto",GM,Russia,2692,,1985,,,SK Schwaebisch Hall,214
+56,4168003,"Matlakov, Maxim",GM,Russia,2692,,1991,,,,173
+57,13300881,"Sargissian, Gabriel",GM,Armenia,2689,,1983,,,,144
+58,400173,"Sadler, Matthew D",GM,England,2688,,1974,,,,45
+59,3802272,"Cori, Jorge",GM,Peru,2686,,1995,,,SC Emmendingen 1937,186
+60,14105730,"Korobov, Anton",GM,Ukraine,2686,,1985,,,,163
+61,8601429,"Wang, Yue",GM,China,2684,,1987,,,,185
+62,8601160,"Ni, Hua",GM,China,2683,,1983,,,,205
+63,2905540,"Cheparinov, Ivan",GM,Georgia,2683,,1986,,,SV Hockenheim,199
+64,5018471,"Adhiban, B",GM,India,2683,,1992,,,,187
+65,14102951,"Eljanov, Pavel",GM,Ukraine,2682,,1983,,,USV TU Dresden,199
+66,409561,"Jones, Gawain C B",GM,England,2681,,1987,,,Muenchener SC 1836 e,255
+67,605506,"Bacrot, Etienne",GM,France,2681,,1983,,,OSG Baden-Baden,253
+68,14109182,"Kryvoruchko, Yuriy",GM,Ukraine,2680,,1986,,,SC Viernheim 1934 e.,209
+69,702293,"Almasi, Zoltan",GM,Hungary,2680,,1976,,,USV TU Dresden,131
+70,4160258,"Demchenko, Anton",GM,Russia,2678,,1987,,,Duesseldorfer Schach,94
+71,5004985,"Sasikiran, Krishnan",GM,India,2678,,1981,,,,166
+72,700070,"Polgar, Judit",GM,Hungary,2675,,1976,wi,,,66
+73,702218,"Gyimesi, Zoltan",GM,Hungary,2674,,1977,i,,SC Eppingen,157
+74,2806851,"Rodshtein, Maxim",GM,Israel,2673,,1989,,,SK Schwaebisch Hall,228
+75,12539929,"Maghsoodloo, Parham",GM,Iran,2673,,2000,,,,98
+76,9301348,"Salem, A R Saleh",GM,UAE,2672,,1993,,,,199
+77,316385,"Laznicka, Viktor",GM,Czech Republic,2670,,1988,,,Novoborsky Sk,189
+78,1202758,"Nisipeanu, Liviu-Dieter",GM,Germany,2670,,1976,,,USV TU Dresden,244
+79,14103320,"Ponomariov, Ruslan",GM,Ukraine,2667,,1983,,,,127
+80,2023970,"Robson, Ray",GM,USA,2667,,1994,,,Missouri,325
+81,4120787,"Malakhov, Vladimir",GM,Russia,2667,,1980,,,SC Viernheim 1934 e.,178
+82,4118987,"Najer, Evgeniy",GM,Russia,2667,,1977,,,Schachverein Wattens,199
+83,2209390,"Shirov, Alexei",GM,Spain,2667,,1972,,,OSG Baden-Baden,284
+84,4189302,"Sjugirov, Sanan",GM,Russia,2667,,1993,,,,173
+85,2000024,"Kamsky, Gata",GM,USA,2666,,1974,,,New York,268
+86,718572,"Berkes, Ferenc",GM,Hungary,2666,,1985,,,SC Eppingen,205
+87,3503739,"Bruzon Batista, Lazaro",GM,Cuba,2666,,1982,,,BARBERA,219
+88,112275,"Mareco, Sandro",GM,Argentina,2666,,1987,,,Capital,199
+89,13401378,"Guseinov, Gadir",GM,Azerbaijan,2664,,1986,,,,172
+90,14200244,"Kasimdzhanov, Rustam",GM,Uzbekistan,2663,,1979,,,OSG Baden-Baden,169
+91,2047640,"Xiong, Jeffery",GM,USA,2663,,2000,,,,117
+92,4100107,"Dreev, Aleksey",GM,Russia,2662,,1969,,,,199
+93,13402129,"Safarli, Eltaj",GM,Azerbaijan,2662,,1992,,,,172
+94,8602980,"Hou, Yifan",GM,China,2662,,1994,w,,,190
+95,13302485,"Melkumyan, Hrant",GM,Armenia,2661,,1989,,,Schachfreunde Berlin,226
+96,14109530,"Areshchenko, Alexander",GM,Ukraine,2661,,1986,,,SAbt SV Werder Breme,210
+97,404853,"Mcshane, Luke J",GM,England,2661,,1984,,,SAbt SV Werder Breme,134
+98,618438,"Tkachiev, Vladislav",GM,France,2660,,1973,i,,Schachgemeinschaft P,122
+99,703303,"Leko, Peter",GM,Hungary,2660,,1979,,,,99
+100,11000000006,"Botvinnik, Mikhail Moiseyevich",GM,Soviet Union,2660,,1911,i,,,0
+101,14117908,"Kovalenko, Igor",GM,Latvia,2658,,1988,,,SC Viernheim 1934 e.,221
+102,633429,"Edouard, Romain",GM,France,2658,,1990,,,SAbt SV Werder Breme,330
+103,1020854,"Van Kampen, Robin",GM,Netherlands,2658,,1994,,,Schachgesellschaft S,230
+104,600016,"Lautier, Joel",GM,France,2658,,1973,i,,,60
+105,4199758,"Bukavshin, Ivan",GM,Russia,2658,,1995,i,,,153
+106,1204297,"Parligras, Mircea Emilian",GM,Romania,2657,,1980,,,DJK Aufwaerts St. Jo,224
+107,12573981,"Firouzja, Alireza",GM,Iran,2657,,2003,,,Muenchener SC 1836 e,67
+108,11600098,"Rausis, Igors",GM,Czech Republic,2657,,1961,,,SC Emmendingen 1937,342
+109,4116992,"Morozevich, Alexander",GM,Russia,2656,,1977,,,,131
+110,1126881,"Swiercz, Dariusz",GM,USA,2655,,1994,,,DJK Aufwaerts St. Jo,234
+111,2805677,"Gelfand, Boris",GM,Israel,2655,,1968,,,,154
+112,603767,"Bauer, Christian",GM,France,2654,,1977,,,SC Emmendingen 1937,263
+113,4115309,"Rublevsky, Sergei",GM,Russia,2652,,1974,,,Sfr. Bad Emstal/Wolf,114
+114,608742,"Fressinet, Laurent",GM,France,2652,,1981,,,SAbt SV Werder Breme,266
+115,13300032,"Akopian, Vladimir",GM,Armenia,2650,,1971,,,,123
+116,1503707,"Hammer, Jon Ludvig",GM,Norway,2650,,1990,,,,211
+117,4121830,"Motylev, Alexander",GM,Russia,2650,,1979,,,Schachverein Muelhei,215
+118,14116731,"Ipatov, Alexander",GM,Turkey,2650,,1993,,,Schachklub Turm Emsd,206
+119,4125029,"Riazantsev, Alexander",GM,Russia,2649,,1985,,,,170
+120,4142527,"Kurnosov, Igor",GM,Russia,2649,,1985,i,,,142
+121,14102560,"Moiseenko, Alexander",GM,Ukraine,2648,,1980,,,,212
+122,14101025,"Onischuk, Alexander",GM,USA,2647,,1975,,,Texas,215
+123,12401110,"Nguyen, Ngoc Truong Son",GM,Vietnam,2647,,1990,,,,132
+124,1007998,"L'ami, Erwin",GM,Netherlands,2645,,1985,,,Schachgesellschaft S,301
+125,11000000009,"Petrosyan, Tigran",GM,Soviet Union,2645,,1929,i,,,0
+126,14112906,"Kuzubov, Yuriy",GM,Ukraine,2644,,1990,,,,177
+127,3800024,"Granda Zuniga, Julio Ernesto",GM,Peru,2644,,1967,,,DJK Aufwaerts St. Jo,199
+128,4100069,"Salov, Valery",GM,Russia,2644,,1964,i,,,1
+129,4157800,"Ponkratov, Pavel",GM,Russia,2644,,1988,,,Sfr. Bad Emstal/Wolf,184
+130,4135539,"Alekseenko, Kirill",GM,Russia,2644,,1997,,,Wiesbadener SV 1885,144
+131,14603853,"Lenic, Luka",GM,Slovenia,2643,,1988,,,SV Hockenheim,236
+132,2285525,"Anton Guijarro, David",GM,Spain,2643,,1995,,,,189
+133,4100140,"Bareev, Evgeny",GM,Canada,2642,,1966,,,,66
+134,4113403,"Zvjaginsev, Vadim",GM,Russia,2642,,1976,,,,131
+135,2040506,"Sevian, Samuel",GM,USA,2642,,2000,,,California,244
+136,8000000485,"Lasker, Emanuel",GM,Germany,2642,,1868,i,,,0
+137,4138147,"Alekseev, Evgeny",GM,Russia,2640,,1985,,,Duesseldorfer Schach,231
+138,4201345,"Papaioannou, Ioannis",GM,Greece,2640,,1976,,,,90
+139,5016690,"Negi, Parimarjan",GM,India,2639,,1993,,,Sportfreunde Katernb,232
+140,4625498,"Gustafsson, Jan",GM,Germany,2639,,1979,,,OSG Baden-Baden,243
+141,3901211,"Iturrizaga Bonelli, Eduardo",GM,Venezuela,2639,,1989,,,Venezuela,185
+142,14118084,"Nyzhnyk, Illya",GM,Ukraine,2638,,1996,,,Schachgemeinschaft P,164
+143,1017063,"Bok, Benjamin",GM,Netherlands,2638,,1995,,,Schachgesellschaft S,236
+144,14107201,"Efimenko, Zahar",GM,Ukraine,2638,,1985,,,SAbt SV Werder Breme,233
+145,2802007,"Sutovsky, Emil",GM,Israel,2638,,1977,,,,163
+146,2021285,"Lenderman, Aleksandr",GM,USA,2637,,1989,,,New York,1035
+147,5021596,"Sethuraman, S P",GM,India,2637,,1993,,,PSPB,201
+148,13601326,"Azmaiparashvili, Zurab",GM,Georgia,2637,,1960,i,,,44
+149,8600694,"Zhang, Zhong",GM,China,2636,,1978,i,,,103
+150,6302718,"Yilmaz, Mustafa",GM,Turkey,2636,,1992,,,Schachklub Turm Emsd,169
+151,400025,"Short, Nigel D",GM,England,2636,,1965,,,4NCL Guildford,136
+152,14107090,"Volokitin, Andrei",GM,Ukraine,2635,,1986,,,SV 1920 Hofheim,193
+153,1124668,"Tomczak, Jacek",GM,Poland,2635,,1990,,,Schachfreunde Berlin,184
+154,1400355,"Nielsen, Peter Heine",GM,Denmark,2635,,1973,i,,SF Deizisau,149
+155,4150120,"Lysyj, Igor",GM,Russia,2635,,1987,,,,163
+156,13302507,"Hovhannisyan, Robert",GM,Armenia,2634,,1991,,,,118
+157,8000000023,"Morphy, Paul Charles",,Unknown,2634,,0,i,,,0
+158,11600454,"Fridman, Daniel",GM,Germany,2633,,1976,,,Schachverein Muelhei,332
+159,5002150,"Ganguly, Surya Shekhar",GM,India,2633,,1983,,,,185
+160,616915,"Gozzoli, Yannick",GM,France,2633,,1983,,,OSG Baden-Baden,145
+161,4157770,"Afromeev, Vladimir",FM,Russia,2633,,1954,i,,,20
+162,14113147,"Kravtsiv, Martyn",GM,Ukraine,2632,,1990,,,Hamburger SK von 183,214
+163,662399,"Lagarde, Maxime",GM,France,2631,,1994,,,SF Deizisau,174
+164,1130420,"Piorun, Kacper",GM,Poland,2631,,1991,,,Schachfreunde Berlin,161
+165,3700488,"Bachmann, Axel",GM,Paraguay,2631,,1989,,,,191
+166,712779,"Gledura, Benjamin",GM,Hungary,2630,,1999,,,OSG Baden-Baden,144
+167,8603154,"Ma, Qun",GM,China,2630,,1991,,,,82
+168,13700464,"Sadvakasov, Darmen",GM,Kazakhstan,2629,,1979,i,,,103
+169,4173708,"Rakhmanov, Aleksandr",GM,Russia,2629,,1989,,,,180
+170,14116804,"Zherebukh, Yaroslav",GM,USA,2629,,1993,,,Hamburger SK von 183,143
+171,8000000044,"Winawer, Szymon Abramowicz",,Unknown,2629,,0,i,,,0
+172,4119150,"Kobalia, Mikhail",GM,Russia,2627,,1978,,,Wiesbadener SV 1885,127
+173,310204,"Movsesian, Sergei",GM,Armenia,2627,,1978,,,OSG Baden-Baden,264
+174,13402960,"Abasov, Nijat",GM,Azerbaijan,2627,,1995,,,,101
+175,8602522,"Zhao, Jun",GM,China,2627,,1986,,,,140
+176,4194985,"Paravyan, David",GM,Russia,2627,,1998,,,,124
+177,3504409,"Quesada Perez, Yuniesky",GM,Cuba,2626,,1984,,,,171
+178,14114038,"Onischuk, Vladimir",GM,Ukraine,2626,,1991,,,,148
+179,13300580,"Akobian, Varuzhan",GM,USA,2625,,1983,,,Kansas,158
+180,4129199,"Grachev, Boris",GM,Russia,2625,,1986,,,Schachverein Muelhei,250
+181,8603332,"Lu, Shanglei",GM,China,2625,,1995,,,,134
+182,24133795,"Sarana, Alexey",GM,Russia,2625,,2000,,,,131
+183,1000055,"Piket, Jeroen",GM,Netherlands,2624,,1969,i,,,17
+184,14700077,"Amonatov, Farrukh",GM,Tajikistan,2624,,1978,,,,148
+185,8000000513,"Makovets, Gyula",,Unknown,2624,,0,i,,,0
+186,930849,"Predojevic, Borki",GM,Bosnia & Herz.,2623,,1987,,,,158
+187,4100026,"Karpov, Anatoly",GM,Russia,2622,,1951,,,SV Hockenheim,39
+188,2257327,"Salgado Lopez, Ivan",GM,Spain,2622,,1991,,,SG Turm Kiel von 191,202
+189,13601520,"Jobava, Baadur",GM,Georgia,2622,,1983,,,SV Hockenheim,157
+190,13402935,"Durarbayli, Vasif",GM,Azerbaijan,2622,,1992,,,,135
+191,4675789,"Meier, Georg",GM,Germany,2621,,1987,,,SF Deizisau,226
+192,1039784,"Van Foreest, Jorden",GM,Netherlands,2621,,1999,,,DJK Aufwaerts St. Jo,185
+193,4142578,"Khismatullin, Denis",GM,Russia,2621,,1984,,,,214
+194,2000032,"Seirawan, Yasser",GM,USA,2620,,1960,i,,Washington,67
+195,1107038,"Socko, Bartosz",GM,Poland,2620,,1978,,,FC ST.Pauli 1910 eV,315
+196,4101685,"Landa, Konstantin",GM,Russia,2620,,1972,,,Schachverein Muelhei,244
+197,114987,"Kovalyov, Anton",GM,Canada,2620,,1992,,,----,124
+198,911925,"Indjic, Aleksandar",GM,Serbia,2620,,1995,,,,116
+199,13303732,"Gabuzyan, Hovhannes",GM,Armenia,2620,,1995,,,,126
+200,8000000043,"De Vere, Cecil Valentine",,Unknown,2620,,0,i,,,0
+201,2804344,"Postny, Evgeny",GM,Israel,2619,,1981,,,BCA Augsburg,329
+202,14502879,"Kozul, Zdenko",GM,Croatia,2619,,1966,,,SF Deizisau,216
+203,8000000315,"Potter, William Norwood",,Unknown,2619,,0,i,,,0
+204,2801990,"Smirin, Ilia",GM,Israel,2618,,1968,,,,170
+205,4151348,"Khairullin, Ildar",GM,Russia,2618,,1990,i,,,170
+206,2101246,"Leitao, Rafael",GM,Brazil,2617,,1979,,,,121
+207,4100115,"Khalifman, Alexander",GM,Russia,2617,,1966,,,,96
+208,912417,"Ivanisevic, Ivan",GM,Serbia,2616,,1977,,,,243
+209,13301578,"Pashikian, Arman",GM,Armenia,2616,,1987,,,,114
+210,1113100,"Krasenkow, Michal",GM,Poland,2616,,1963,,,SF Deizisau,202
+211,24651516,"Bluebaum, Matthias",GM,Germany,2616,,1997,,,SF Deizisau,229
+212,813192,"Vocaturo, Daniele",GM,Italy,2616,,1989,,,,172
+213,13306553,"Martirosyan, Haik M",GM,Armenia,2616,,2000,,,,67
+214,14107180,"Drozdovskij, Yuri",GM,Ukraine,2616,,1984,i,,DJK Aachen,83
+215,14114470,"Vovk, Andriy",GM,Ukraine,2616,,1991,,,,127
+216,3801497,"Cordova, Emilio",GM,Peru,2615,,1991,,,,185
+217,8603537,"Zhou, Jianchao",GM,China,2615,,1988,,,,177
+218,13400819,"Mamedov, Nidjat",GM,Azerbaijan,2615,,1985,,,,115
+219,718939,"Balogh, Csaba",GM,Hungary,2614,,1987,,,SV Hockenheim,253
+220,715620,"Chernin, Alexander",GM,Hungary,2614,,1960,i,,MERKUR GRAZ,48
+221,14102196,"Baklan, Vladimir",GM,Ukraine,2614,,1978,,,SC Emmendingen 1937,276
+222,14507927,"Bosiocic, Marin",GM,Croatia,2614,,1988,,,TSV Schoenaich,253
+223,722413,"Banusz, Tamas",GM,Hungary,2614,,1989,,,SV Hockenheim,237
+224,24131920,"Eliseev, Urii",GM,Russia,2614,,1996,i,,,97
+225,1510045,"Tari, Aryan",GM,Norway,2613,,1999,,,,193
+226,4108116,"Chigaev, Maksim",GM,Russia,2613,,1996,,,,151
+227,4198603,"Shimanov, Aleksandr",GM,Russia,2613,,1992,,,,179
+228,14113007,"Kononenko, Dmitry",GM,Ukraine,2613,,1988,i,,,91
+229,24125890,"Oparin, Grigoriy",GM,Russia,2613,,1997,,,,159
+230,1116207,"Gajewski, Grzegorz",GM,Poland,2612,,1985,,,USV TU Dresden,201
+231,719978,"Erdos, Viktor",GM,Hungary,2612,,1987,,,MTV Tostedt,233
+232,4148843,"Romanov, Evgeny",GM,Russia,2612,,1988,,,Erfurter Schachklub,241
+233,1000268,"Van Wely, Loek",GM,Netherlands,2612,,1972,,,Schachgesellschaft S,314
+234,2606771,"Hansen, Eric",GM,Canada,2612,,1992,,,Schachverein Wattens,165
+235,1207822,"Lupulescu, Constantin",GM,Romania,2611,,1984,,,DJK Aufwaerts St. Jo,253
+236,2200015,"Illescas Cordoba, Miguel",GM,Spain,2611,,1965,,,Barcelona,81
+237,4120426,"Galkin, Alexander",GM,Russia,2611,,1979,i,,,76
+238,10601619,"Adly, Ahmed",GM,Egypt,2611,,1987,,,,210
+239,13602071,"Pantsulaia, Levan",GM,Georgia,2611,,1986,,,,191
+240,14109158,"Pilavov, Georgy",GM,Ukraine,2611,,1974,,,,122
+241,24107581,"Predke, Alexandr",GM,Russia,2611,,1994,,,,123
+242,4657101,"Svane, Rasmus",GM,Germany,2610,,1997,,,Hamburger SK von 183,238
+243,1003720,"Van Den Doel, Erik",GM,Netherlands,2610,,1979,,,Schachgemeinschaft P,223
+244,13600966,"Mchedlishvili, Mikheil",GM,Georgia,2610,,1979,,,Schachklub Turm Emsd,222
+245,4676670,"Bindrich, Falko",GM,Germany,2610,,1990,,,DJK Aufwaerts St. Jo,278
+246,2026961,"Naroditsky, Daniel",GM,USA,2610,,1995,,,,106
+247,3503631,"Delgado Ramirez, Neuris",GM,Paraguay,2610,,1981,,,,181
+248,24109959,"Goganov, Aleksey",GM,Russia,2610,,1991,,,,167
+249,14102536,"Fedorchuk, Sergey A",GM,Ukraine,2609,,1981,,,SC Viernheim 1934 e.,380
+250,24624632,"Heimann, Andreas",GM,Germany,2609,,1992,,,SF Deizisau,242
+251,1226380,"Deac, Bogdan-Daniel",GM,Romania,2609,,2001,,,Sah Club Ramnicu Val,133
+252,400076,"Hodgson, Julian M",GM,England,2609,,1963,i,,,8
+253,13702661,"Jumabayev, Rinat",GM,Kazakhstan,2609,,1989,,,,164
+254,2100789,"Vescovi, Giovanni",GM,Brazil,2606,,1978,i,,,85
+255,2210622,"Perez Candelario, Manuel",GM,Spain,2606,,1983,,,,128
+256,8000000042,"Neumann, Gustav Richard Ludwig",,Unknown,2606,,0,i,,,0
+257,1008013,"Tiviakov, Sergei",GM,Netherlands,2605,,1973,,,SC Eppingen,344
+258,14109409,"Zubov, Alexander",GM,Ukraine,2605,,1983,,,Sfr. Bad Emstal/Wolf,128
+259,922900,"Sedlak, Nikola",GM,Serbia,2605,,1983,,,SV Deggendorf,265
+260,716855,"Hera, Imre",GM,Hungary,2605,,1986,,,SC Emmendingen 1937,213
+261,1006673,"Stellwagen, Daniel",GM,Netherlands,2605,,1987,i,,Schachgesellschaft S,125
+262,4132181,"Kokarev, Dmitry",GM,Russia,2605,,1982,,,,142
+263,12510130,"Idani, Pouya",GM,Iran,2604,,1995,,,Wiesbadener SV 1885,114
+264,13502956,"Zhigalko, Sergei",GM,Belarus,2604,,1989,,,,181
+265,13601733,"Izoria, Zviad",GM,USA,2603,,1984,,,New York,304
+266,14101866,"Ovsejevitsch, Sergei",GM,Ukraine,2603,,1974,,,SK Gau-Algesheim,209
+267,14120828,"Bortnyk, Olexandr",GM,Ukraine,2603,,1996,,,,148
+268,24112798,"Gordievsky, Dmitry",GM,Russia,2603,,1996,,,,156
+269,24175439,"Esipenko, Andrey",GM,Russia,2603,,2002,,,,82
+270,8600040,"Ye, Jiangchuan",GM,China,2602,,1960,i,,,26
+271,5010608,"Gupta, Abhijeet",GM,India,2602,,1989,,,,216
+272,13301527,"Gharamian, Tigran",GM,France,2602,,1984,,,SK Schwaebisch Hall,204
+273,2804158,"Roiz, Michael",GM,Israel,2602,,1983,,,,171
+274,13900200,"Iordachescu, Viorel",GM,Moldova,2602,,1977,,,,193
+275,1700022,"Hellers, Ferdinand",GM,Sweden,2601,,1969,,,,8
+276,4692055,"Bogner, Sebastian",GM,Switzerland,2601,,1991,,,SC Dreilaendereck,309
+277,4663527,"Braun, Arik",GM,Germany,2601,,1988,,,SV Hockenheim,197
+278,642908,"Moussard, Jules",GM,France,2601,,1995,,,DJK Aufwaerts St. Jo,167
+279,916811,"Solak, Dragan",GM,Turkey,2601,,1980,,,,186
+280,4202031,"Banikas, Hristos",GM,Greece,2601,,1978,,,,143
+281,13700014,"Vladimirov, Yevgeniy",GM,Kazakhstan,2601,,1957,i,,,34
+282,921629,"Perunovic, Milos",GM,Serbia,2600,,1984,,,,209
+283,921637,"Markus, Robert",GM,Serbia,2600,,1983,,,Schachclub Hansa Dor,235
+284,1112635,"Bartel, Mateusz",GM,Poland,2600,,1985,,,USV TU Dresden,273
+285,12521213,"Tabatabaei, Seyed Mohammad Amin",GM,Iran,2600,,2001,,,Muenchener SC 1836 e,171
+286,13302000,"Andriasian, Zaven",GM,Armenia,2600,,1989,,,,165
+287,2801906,"Alterman, Boris",GM,Israel,2599,,1970,,,,28
+288,1413864,"Andersen, Mads",GM,Denmark,2599,,1995,,,Schachgesellschaft S,187
+289,718602,"Papp, Gabor",GM,Hungary,2599,,1987,,,ESV Nickelhuette Aue,175
+290,5072786,"Aravindh, Chithambaram Vr",GM,India,2599,,1999,,,,176
+291,8602956,"Wen, Yang",GM,China,2599,,1988,,,,131
+292,8000000450,"Von Bardeleben, Curt",,Unknown,2599,,0,i,,,0
+293,1304364,"Milov, Vadim",GM,Switzerland,2598,,1972,,,,160
+294,4132394,"Belov, Vladimir",GM,Russia,2598,,1984,i,,,92
+295,15001334,"Najdoski, Toni",GM,FYR Macedonia,2598,,1970,i,,,1
+296,726265,"Prohaszka, Peter",GM,Hungary,2597,,1992,,,ESV Nickelhuette Aue,211
+297,14102595,"Miroshnichenko, Evgenij",GM,Ukraine,2597,,1978,,,SV Hockenheim,183
+298,4131061,"Potkin, Vladimir",GM,Russia,2597,,1982,,,Schachverein Muelhei,191
+299,1400010,"Hansen, Curt",GM,Denmark,2596,,1964,i,,,32
+300,108049,"Flores, Diego",GM,Argentina,2596,,1982,,,,183
+301,13301616,"Petrosian, Tigran L",GM,Armenia,2595,,1984,,,,173
+302,4667719,"Baramidze, David",GM,Germany,2595,,1988,,,SV Hockenheim,287
+303,2900017,"Georgiev, Kiril",GM,FYR Macedonia,2595,,1965,,,SK Oetigheim,242
+304,1122401,"Moranda, Wojciech",GM,Poland,2595,,1988,,,Schachfreunde Berlin,136
+305,4623606,"Dautov, Rustem",GM,Germany,2595,,1965,,,SF Deizisau,88
+306,1100025,"Wojtkiewicz, Aleksander",GM,Poland,2595,,0,i,,,132
+307,24604747,"Huschenbeth, Niclas",GM,Germany,2594,,1992,,,Hamburger SK von 183,246
+308,4107012,"Antipov, Mikhail Al",GM,Russia,2594,,1997,,,,143
+309,14400030,"Sokolov, Ivan",GM,Netherlands,2593,,1968,,,SV Hockenheim,248
+310,24603295,"Donchenko, Alexander",GM,Germany,2593,,1998,,,SF Deizisau,296
+311,1007246,"Smeets, Jan",GM,Netherlands,2593,,1985,,,Schachgesellschaft S,211
+312,8602280,"Bai, Jinshi",GM,China,2593,,1999,,,,76
+313,4127870,"Pridorozhni, Aleksei",GM,Russia,2593,,1981,,,,138
+314,4140419,"Timofeev, Artyom",GM,Russia,2593,,1985,,,,165
+315,5058422,Narayanan S L,GM,India,2593,,1998,,,,120
+316,8000000037,"Kolisch, Ignatz",,Unknown,2593,,0,i,,,0
+317,1110381,"Mista, Aleksander",GM,Poland,2592,,1983,,,Schachfreunde Berlin,187
+318,304760,"Stocek, Jiri",GM,Czech Republic,2592,,1977,,,SC Garching 1980 e.V,200
+319,14200988,"Filippov, Anton",GM,Uzbekistan,2592,,1986,i,,,119
+320,13600613,"Kacheishvili, Giorgi",GM,Georgia,2591,,1977,i,,,331
+321,8600511,"Peng, Xiaomin",GM,China,2591,,1973,i,,,23
+322,4101286,"Petrov, Nikita",GM,Russia,2591,,1996,,,,62
+323,4167392,"Chadaev, Nikolai",GM,Russia,2591,,1988,i,,,109
+324,1111914,"Miton, Kamil",GM,Poland,2590,,1984,,,,276
+325,3507416,"Bacallao Alonso, Yusnel",GM,Cuba,2590,,1988,,,CUBA,123
+326,4152417,"Oleksiyenko, Mykhaylo",GM,Ukraine,2590,,1986,,,SG Speyer-Schwegenhe,144
+327,2603608,"Bluvshtein, Mark",GM,Canada,2590,,1988,i,,,77
+328,2056437,"Liang, Awonder",GM,USA,2590,,2003,,,Wisconsin,240
+329,4153278,"Kryakvin, Dmitry",GM,Russia,2590,,1984,,,,154
+330,13302531,"Ter-Sahakyan, Samvel",GM,Armenia,2590,,1993,,,,115
+331,2803895,"Avrukh, Boris",GM,Israel,2589,,1978,i,,SK Schwaebisch Hall,161
+332,4115341,"Tregubov, Pavel V",GM,Russia,2589,,1971,,,Schachverein Muelhei,213
+333,14502569,"Stevic, Hrvoje",GM,Croatia,2589,,1980,,,SK Kirchweyhe 1947,238
+334,5015693,Gopal G N,GM,India,2589,,1989,,,,163
+335,5045185,"Vaibhav, Suri",GM,India,2589,,1997,,,,113
+336,14117207,"Baryshpolets, Andrey",GM,Ukraine,2589,,1991,,,,125
+337,14105500,"Sumets, Andrey",GM,Ukraine,2588,,1980,,,SF Lilienthal von 19,242
+338,8601674,"Zhou, Weiqi",GM,China,2588,,1986,,,,143
+339,13700316,"Kazhgaleyev, Murtas",GM,Kazakhstan,2587,,1973,,,,141
+340,4202694,"Mastrovasilis, Dimitrios",GM,Greece,2587,,1983,,,Schachklub Koenig Pl,204
+341,708020,"Acs, Peter",GM,Hungary,2587,,1981,,,SC Eppingen,126
+342,1400266,"Hansen, Sune Berg",GM,Denmark,2587,,1971,,,Hamburger SK von 183,136
+343,4627253,"Doettling, Fabian",GM,Germany,2587,,1980,i,,OSG Baden-Baden,145
+344,3518736,"Albornoz Cabrera, Carlos Daniel",IM,Cuba,2587,,2000,,,,42
+345,2000628,"Gurevich, Ilya",GM,USA,2586,,1972,i,,New York,29
+346,4671910,"Kraemer, Martin",GM,Germany,2586,,1987,,,Schachfreunde Berlin,138
+347,4146786,"Maletin, Pavel",GM,Russia,2586,,1986,,,Sfr. Bad Emstal/Wolf,198
+348,5024595,Lalith Babu M R,GM,India,2586,,1993,,,,167
+349,6302181,"Can, Emre",GM,Turkey,2586,,1990,,,ANKARA,145
+350,13501470,"Azarov, Sergei",GM,Belarus,2585,,1983,,,,163
+351,1001302,"Reinderman, Dimitri",GM,Netherlands,2585,,1972,,,Schachgemeinschaft P,183
+352,1134167,"Dragun, Kamil",GM,Poland,2585,,1995,,,Schachverein Wattens,199
+353,4104226,"Sakaev, Konstantin",GM,Russia,2584,,1974,,,SG Kaiserslautern 19,107
+354,2905710,"Nikolov, Momchil",GM,Bulgaria,2584,,1985,,,,195
+355,9000011,"Hamdouchi, Hicham",GM,Morocco,2584,,1972,,,Marruecos,186
+356,110973,"Pichot, Alan",GM,Argentina,2584,,1998,,,FMDA,206
+357,4120086,"Turov, Maxim",GM,Russia,2584,,1979,,,,181
+358,13600044,"Giorgadze, Giorgi",GM,Georgia,2584,,1964,i,,,18
+359,14603152,"Borisek, Jure",GM,Slovenia,2584,,1986,,,Slowenien,102
+360,8000000543,"Maroczy, Geza",,Unknown,2584,,0,i,,,0
+361,8600783,"Yin, Hao",IM,China,2583,,1979,i,,Zugzwang Klagenfurt,6
+362,5074452,"Karthikeyan, Murali",GM,India,2583,,1999,,,,183
+363,2293307,"Santos Latasa, Jaime",GM,Spain,2582,,1996,,,CIUDAD NARANCO,97
+364,2803828,"Huzman, Alexander",GM,Israel,2582,,1962,,,,78
+365,24131423,"Yuffa, Daniil",GM,Russia,2582,,1997,,,,111
+366,8000000490,"Bauer, Johann Hermann",,Unknown,2582,,0,i,,,0
+367,2022036,"Hess, Robert",GM,USA,2581,,1991,,,New York,573
+368,24662259,"Schroeder, Jan-Christian",GM,Germany,2581,,1998,,,SV 1920 Hofheim,246
+369,1705024,"Agrest, Evgenij",GM,Sweden,2581,,1966,,,Sollentuna SK (SWE),108
+370,922277,"Vuckovic, Bojan",GM,Serbia,2581,,1980,,,,93
+371,1010891,"Spoelman, Wouter",GM,Netherlands,2581,,1990,,,SAbt SV Werder Breme,170
+372,4170350,"Popov, Ivan",GM,Russia,2581,,1990,,,,156
+373,14100371,"Bernadskiy, Vitaliy",GM,Ukraine,2581,,1994,,,,130
+374,634654,"Feller, Sebastien",GM,France,2580,,1991,,,,148
+375,24650684,"Wagner, Dennis",GM,Germany,2580,,1997,,,SV Hockenheim,224
+376,4100476,"Dokhoian, Yury",GM,Russia,2580,,1964,i,,,0
+377,8603006,"Ju, Wenjun",GM,China,2580,,1991,w,,,170
+378,13602543,"Jojua, Davit",GM,Georgia,2580,,1989,,,,105
+379,14100061,"Lerner, Konstantin Z",GM,Ukraine,2580,,0,i,,,57
+380,14113171,"Vovk, Yuri",GM,Ukraine,2579,,1988,,,,163
+381,8000000028,"Paulsen, Louis",,Unknown,2579,,0,i,,,0
+382,13601652,"Gagunashvili, Merab",GM,Georgia,2578,,1985,,,,213
+383,14103222,"Goloshchapov, Alexander",GM,Ukraine,2578,,1978,i,,SV Koblenz 03/25,103
+384,300071,"Hracek, Zbynek",GM,Czech Republic,2578,,1970,,,SAbt SV Werder Breme,237
+385,613762,"Maze, Sebastien",GM,France,2578,,1984,,,SC Viernheim 1934 e.,296
+386,2212943,"Lopez Martinez, Josep Manuel",GM,Spain,2578,,1980,,,,171
+387,14100142,"Kruppa, Yuri",GM,Ukraine,2578,,1964,,,,62
+388,25092340,Nihal Sarin,GM,India,2578,,2004,,,,47
+389,700088,"Polgar, Susan",GM,USA,2577,,1969,wi,,,2
+390,2805642,"Erenburg, Sergey",GM,USA,2576,,1983,,,Virginia,166
+391,728446,"Balog, Imre",GM,Hungary,2576,,1991,,,SV Koblenz 03/25,145
+392,1500015,"Agdestein, Simen",GM,Norway,2576,,1967,,,,95
+393,2100010,"Mecking, Henrique",GM,Brazil,2576,,1952,i,,,36
+394,8608288,"Xu, Xiangyu",GM,China,2576,,1999,,,,47
+395,2302241,"Gretarsson, Hjorvar Steinn",GM,Iceland,2576,,1993,,,Hellir,171
+396,13602934,"Paichadze, Luka",GM,Georgia,2576,,1991,,,,123
+397,2801914,"Mikhalevski, Victor",GM,Israel,2575,,1972,,,Israel,258
+398,4147332,"Savchenko, Boris",GM,Russia,2575,,1986,,,Sfr. Bad Emstal/Wolf,219
+399,4600010,"Huebner, Robert",GM,Germany,2575,,1948,,,Schachclub 1919 Sieg,150
+400,2100029,"Milos, Gilberto",GM,Brazil,2575,,1963,i,,,82
+401,4122232,"Shaposhnikov, Evgeny",GM,Russia,2575,,1981,,,,118
+402,13500139,"Aleksandrov, Aleksej",GM,Belarus,2574,,1973,,,,256
+403,2000059,"Christiansen, Larry",GM,USA,2574,,1956,i,,Massachusetts,125
+404,13900048,"Bologan, Victor",GM,Moldova,2574,,1971,,,SC Eppingen,210
+405,6500617,"Ramirez, Alejandro",GM,USA,2574,,1988,,,Texas,158
+406,4123425,"Smirnov, Pavel",GM,Russia,2574,,1982,,,,165
+407,8600147,"Xie, Jun",GM,China,2574,,1970,wi,,,8
+408,13300024,"Lputian, Smbat G",GM,Armenia,2574,,1958,i,,,36
+409,4119142,"Korotylev, Alexey",GM,Russia,2573,,1977,i,,,59
+410,24104272,"Rozum, Ivan",GM,Russia,2573,,1991,,,,129
+411,105309,"Peralta, Fernando",GM,Argentina,2572,,1979,,,CAT - PEC,197
+412,1105663,"Kempinski, Robert",GM,Poland,2572,,1977,,,Hamburger SK von 183,215
+413,14400014,"Nikolic, Predrag",GM,Bosnia & Herz.,2572,,1960,,,Schachgesellschaft S,183
+414,4680804,"Graf, Alexander",GM,Germany,2572,,1962,,,SF Deizisau,140
+415,922412,"Djukic, Nikola",GM,Montenegro,2572,,1983,,,,181
+416,4119800,"Dyachkov, Sergej",GM,Russia,2572,,1976,i,,,34
+417,4122763,"Volkov, Sergey",GM,Russia,2572,,1974,,,,220
+418,200930,"Gurevich, Mikhail",GM,Belgium,2571,,1959,,,Turquia,139
+419,13301004,"Grigoryan, Karen H",GM,Armenia,2571,,1995,,,Yerevan,121
+420,900010,"Ljubojevic, Ljubomir",GM,Serbia,2571,,1950,i,,,23
+421,14506688,"Brkic, Ante",GM,Croatia,2570,,1988,,,SK Kirchweyhe 1947,236
+422,322156,"Krejci, Jan",GM,Czech Republic,2570,,1992,,,SC Heusenstamm,227
+423,108928,"Sorokin, Maxim",GM,Argentina,2570,,0,i,,,40
+424,3805662,"Martinez Alcantara, Jose Eduardo",GM,Peru,2570,,1999,,,,82
+425,4100948,"Kharitonov, Andrei Y",GM,Russia,2570,,0,i,,,12
+426,3801969,"Cruz, Cristhian",GM,Peru,2569,,1992,,,Escola Escacs B.,198
+427,14203987,"Yakubboev, Nodirbek",IM,Uzbekistan,2569,,2002,,,,53
+428,4162714,"Epishin, Vladimir",GM,Russia,2568,,1965,,,Rusia,313
+429,4653530,"Kritz, Leonid",GM,Germany,2568,,1984,i,,SAbt SV Werder Breme,192
+430,4651340,"Buhmann, Rainer",GM,Germany,2568,,1981,,,SV Hockenheim,384
+431,11602740,"Meskovs, Nikita",GM,Latvia,2568,,1994,,,SG Speyer-Schwegenhe,214
+432,400017,"Nunn, John D M",GM,England,2568,,1955,,,,10
+433,5201268,"Sadorra, Julio Catalino",GM,Philippines,2568,,1986,,,,111
+434,13302191,"Grigoryan, Avetik",GM,Armenia,2568,,1989,i,,,115
+435,8000000202,"Hirschfeld, Philipp",,Unknown,2568,,0,i,,,0
+436,2288230,"Forcen Esteban, Daniel",GM,Spain,2567,,1994,,,,171
+437,3208923,"Smirnov, Anton",GM,Australia,2567,,2001,,,,92
+438,14604299,"Skoberne, Jure",GM,Slovenia,2567,,1987,,,,98
+439,107069,"Felgaer, Ruben",GM,Argentina,2566,,1981,,,,177
+440,7100019,"Adianto, Utut",GM,Indonesia,2566,,1965,i,,,36
+441,4121341,"Vorobiov, Evgeny E",GM,Russia,2566,,1976,,,SF 90 Spraitbach e.V,193
+442,503142,"Nyback, Tomi",GM,Finland,2566,,1985,,,SAbt SV Werder Breme,234
+443,1211668,"Chirila, Ioan-Cristian",GM,Romania,2566,,1991,,,Clubul Central De Sa,184
+444,14108836,"Shkuro, Iuri",GM,Ukraine,2566,,1982,i,,,73
+445,14903474,"Markos, Jan",GM,Slovakia,2566,,1985,,,Sk Slovan Bratislava,152
+446,14103052,"Kovchan, Alexander",GM,Ukraine,2565,,1983,,,Sportfreunde Katernb,178
+447,14907526,"Michalik, Peter",GM,Czech Republic,2565,,1990,,,SK Schwaebisch Hall,187
+448,2000148,"Wolff, Patrick",GM,USA,2564,,1968,i,,California,47
+449,12909572,"Kollars, Dmitrij",GM,Germany,2564,,1999,,,SF Deizisau,137
+450,865834,"Moroni, Luca Jr",GM,Italy,2564,,2000,,,,138
+451,8600970,"Zhang, Pengxiang",GM,China,2564,,1980,i,,CHINA,95
+452,13300857,"Petrosyan, Manuel",GM,Armenia,2564,,1998,,,Stepanakert,99
+453,8000000001,"De La Bourdonnais, Louis Charles Mahe",,Unknown,2564,,0,i,,,0
+454,3506690,"Corrales Jimenez, Fidel",GM,USA,2563,,1987,,,,203
+455,412686,"Hawkins, Jonathan",GM,England,2563,,1983,,,Consett,52
+456,4180887,"Bocharov, Ivan",IM,Russia,2563,,1990,,,,98
+457,13603078,"Nigalidze, Gaioz",IM,Georgia,2563,,1989,i,,,100
+458,14100037,"Novikov, Igor",GM,USA,2563,,1962,i,,,82
+459,3503321,"Gonzalez Vidal, Yuri",GM,Cuba,2562,,1981,,,,169
+460,117927,"Perez Ponsa, Federico",GM,Argentina,2562,,1993,,,,107
+461,4153251,"Panarin, Mikhail",GM,Russia,2562,,1983,,,,122
+462,2400561,"Rowson, Jonathan",GM,Scotland,2561,,1977,i,,,71
+463,4618777,"Jussupow, Artur",GM,Germany,2561,,1960,,,Schachgesellschaft S,157
+464,4169530,"Vavulin, Maxim",GM,Russia,2561,,1998,,,,142
+465,4189825,"Mozharov, Mikhail",GM,Russia,2561,,1990,,,,197
+466,6300014,"Dastan, Muhammed Batuhan",GM,Turkey,2561,,1997,,,,98
+467,8000000772,"Lasker, Berthold",,Unknown,2561,,0,i,,,0
+468,1400037,"Hansen, Lars Bo",GM,Denmark,2560,,1968,i,,,47
+469,14114550,"Muzychuk, Mariya",GM,Ukraine,2560,,1992,w,,OSG Baden-Baden,170
+470,4100093,"Dolmatov, Sergey",GM,Russia,2560,,1959,i,,,19
+471,22291482,"Santos Ruiz, Miguel",GM,Spain,2560,,1999,,,DJK Aufwaerts St. Jo,137
+472,696358,"Bellahcene, Bilel",GM,Algeria,2560,,1998,,,OSG Baden-Baden,275
+473,403989,"Pert, Nicholas",GM,England,2560,,1981,,,Sandhurst,96
+474,4100301,"Razuvaev, Yuri S",GM,Russia,2560,,0,i,,,2
+475,14204118,"Abdusattorov, Nodirbek",GM,Uzbekistan,2560,,2004,,,,56
+476,13500520,"Shulman, Yury",GM,USA,2559,,1975,i,,Illinois,260
+477,14109336,"Lagno, Kateryna",GM,Russia,2559,,1989,w,,Bochumer Schachverei,0
+478,11601388,"Neiksans, Arturs",GM,Latvia,2559,,1983,,,SG Speyer-Schwegenhe,206
+479,4156803,"Korneev, Oleg",GM,Spain,2559,,1969,,,Schachgemeinschaft P,425
+480,4000013,"David, Alberto",GM,Italy,2559,,1970,,,,218
+481,4700236,"Dervishi, Erald",GM,Albania,2559,,1979,,,Godesberger Schachkl,86
+482,1301837,"Pelletier, Yannick",GM,Switzerland,2559,,1976,,,,199
+483,2270544,"Alonso Rosell, Alvar",GM,Spain,2559,,1992,,,SCC Sabadell,150
+484,4135148,"Shomoev, Anton",GM,Russia,2559,,1981,,,,165
+485,24164879,"Lomasov, Semyon",IM,Russia,2559,,2002,,,Moscow,74
+486,8000000062,"Deschapelles, Alexandre Louis Honore Lebreton",,Unknown,2559,,0,i,,,0
+487,1112953,"Dziuba, Marcin",GM,Poland,2558,,1983,,,SG Turm Kiel von 191,156
+488,14509792,"Martinovic, Sasa",GM,Croatia,2558,,1991,,,TSV Schoenaich,199
+489,2300117,"Steingrimsson, Hedinn",GM,Iceland,2558,,1975,,,Schachgemeinschaft P,92
+490,2900394,"Delchev, Aleksander",GM,Bulgaria,2558,,1971,,,SV Deggendorf,297
+491,20657307,"Rambaldi, Francesco",GM,Italy,2558,,1999,,,,131
+492,1700812,"Hillarp Persson, Tiger",GM,Sweden,2558,,1970,,,,199
+493,14200937,"Gareyev, Timur",GM,USA,2557,,1988,,,California,186
+494,8000000034,"Steinitz, Wilhelm",GM,Austria,2557,,1836,i,,,0
+495,1405853,"Palo, Davor",GM,Denmark,2556,,1985,i,,Preetzer TSV,78
+496,2106388,"Supi, Luis Paulo",GM,Brazil,2556,,1996,,,Sao Paulo,86
+497,1200372,"Istratescu, Andrei",GM,Romania,2556,,1975,,,,226
+498,12401820,"Tran, Tuan Minh",GM,Vietnam,2556,,1997,,,,137
+499,4100514,"Pigusov, Evgeny",GM,Russia,2555,,1961,i,,,33
+500,14111330,"Muzychuk, Anna",GM,Ukraine,2555,,1990,w,,OSG Baden-Baden,245
+501,2019540,"Goldin, Alexander",GM,USA,2555,,1964,i,,Kentucky,207
+502,14401290,"Saric, Ibro",GM,Bosnia & Herz.,2555,,1982,,,,83
+503,5018420,"Narayanan, Srinath",GM,India,2555,,1994,,,,202
+504,4105249,"Berdichevski, Igor",GM,Russia,2555,,1964,i,,,4
+505,4121015,"Grechihin, Valery",GM,Russia,2555,,0,i,,,25
+506,4130901,"Maslak, Konstantin",GM,Russia,2555,,1984,i,,,70
+507,5045207,"Ghosh, Diptayan",GM,India,2555,,1998,,,,150
+508,13601741,"Arutinian, David",GM,Georgia,2555,,1984,,,,145
+509,605590,"Fontaine, Robert",GM,Switzerland,2554,,1980,,,Sportfreunde Katernb,108
+510,201260,"Chuchelov, Vladimir",GM,Belgium,2554,,1969,i,,Sportfreunde Katernb,128
+511,14104369,"Solodovnichenko, Yuri",GM,Ukraine,2554,,1978,,,Schachfreunde Gerres,306
+512,14201801,"Vakhidov, Jakhongir",GM,Uzbekistan,2554,,1995,,,,111
+513,24107131,"Stukopin, Andrey",GM,Russia,2554,,1994,,,,161
+514,4117654,"Filippov, Valerij",GM,Russia,2553,,1975,i,,,51
+515,202967,"Michiels, Bart",GM,Belgium,2553,,1986,,,DJK Aufwaerts St. Jo,140
+516,1115120,"Heberla, Bartlomiej",GM,Poland,2553,,1985,,,Schachclub Hansa Dor,269
+517,5018293,Kannappan Priyadharshan,GM,India,2553,,1993,,,,153
+518,717312,"Antal, Gergely",GM,Hungary,2552,,1985,,,,150
+519,2017199,"Friedel, Joshua",GM,USA,2552,,1986,,,Wisconsin,504
+520,3503054,"Vazquez Igarza, Renier",GM,Spain,2552,,1979,,,,145
+521,4201809,"Halkias, Stelios",GM,Greece,2552,,1980,,,OSG Baden-Baden,198
+522,14114089,"Tarlev, Konstantin",GM,Ukraine,2552,,1987,,,SC Viernheim 1934 e.,138
+523,620084,"Cornette, Matthieu",GM,France,2552,,1985,,,SK Oetigheim,286
+524,1006088,"Werle, Jan",GM,Netherlands,2552,,1984,,,SAbt SV Werder Breme,146
+525,5201640,"Barbosa, Oliver",GM,Philippines,2552,,1986,,,,182
+526,13500465,"Fedorov, Alexei",GM,Belarus,2552,,1972,,,Belarus,135
+527,2107139,"Fier, Alexandr",GM,Brazil,2551,,1988,,,Sportfreunde Katernb,323
+528,4100425,"Smagin, Sergey",GM,Russia,2551,,1958,i,,,24
+529,1407767,"Glud, Jakob Vang",GM,Denmark,2551,,1988,,,SG Turm Kiel von 191,130
+530,301264,"Babula, Vlastimil",GM,Czech Republic,2551,,1973,,,SAbt SV Werder Breme,252
+531,4262875,"Theodorou, Nikolas",IM,Greece,2551,,2000,,,,94
+532,815837,"Rombaldoni, Axel",GM,Italy,2551,,1992,i,,,172
+533,4108566,"Tsydypov, Zhamsaran",IM,Russia,2551,,1996,,,,83
+534,4120680,"Sviridov, Valery",,Russia,2551,,1991,,,,69
+535,5008352,"Sengupta, Deep",GM,India,2551,,1988,,,India,187
+536,2000113,"Dzindzichashvili, Roman",GM,USA,2550,,1944,i,,Massachusetts,67
+537,14506661,"Kuljasevic, Davorin",GM,Croatia,2550,,1986,,,TSV Schoenaich,201
+538,4614950,"Mons, Leon",GM,Germany,2550,,1995,,,MSA Zugzwang 82 e.V.,178
+539,14500116,"Palac, Mladen",GM,Croatia,2550,,1971,,,SK Kirchweyhe 1947,371
+540,108820,"Lafuente, Pablo",GM,Argentina,2550,,1985,i,,,109
+541,1702092,"Hellsten, Johan",GM,Sweden,2550,,1975,i,,,39
+542,2070901,"Burke, John M",GM,USA,2550,,2001,,,Massachusetts,131
+543,2901595,"Radulski, Julian",GM,Bulgaria,2550,,1972,i,,,145
+544,4101634,"Vaulin, Alexander",GM,Russia,2550,,0,i,,,15
+545,13600702,"Gelashvili, Tamaz",GM,Georgia,2549,,1978,i,,,231
+546,1000012,"Timman, Jan Hendrik",GM,Netherlands,2549,,1951,,,Duesseldorfer Schach,191
+547,3509362,"Quesada Perez, Yasser",GM,Cuba,2549,,1992,,,,71
+548,5008123,"Koneru, Humpy",GM,India,2549,,1987,w,,,131
+549,2034387,"Holt, Conrad",GM,USA,2548,,1993,,,Kansas,226
+550,600270,"Degraeve, Jean-Marc",GM,France,2548,,1971,,,SC 1950 Remagen,223
+551,4119932,"Rychagov, Andrey",GM,Russia,2548,,1979,,,SF 90 Spraitbach e.V,170
+552,600024,"Spassky, Boris V",GM,Russia,2548,,1937,i,,,2
+553,4151119,"Nechepurenko, Roman V",FM,Russia,2548,,1988,i,,,70
+554,4634527,"Handke, Florian",GM,Germany,2547,,1982,,,DJK Aufwaerts St. Jo,156
+555,4900847,"Batchuluun, Tsegmed",GM,Mongolia,2547,,1987,,,,83
+556,1406000,"Rasmussen, Allan Stig",GM,Denmark,2547,,1983,,,SG Turm Kiel von 191,111
+557,4135202,"Kharitonov, Alexandr",GM,Russia,2547,,1986,,,,116
+558,14403803,"Kadric, Denis",GM,Bosnia & Herz.,2547,,1995,,,,165
+559,8000001050,"Goetz, Alphonse",,Unknown,2547,,0,i,,,0
+560,13300016,"Vaganian, Rafael A",GM,Armenia,2546,,1951,,,Schachgemeinschaft P,80
+561,4659600,"Khenkin, Igor",GM,Germany,2546,,1968,,,SG Turm Kiel von 191,341
+562,14600986,"Pavasovic, Dusko",GM,Slovenia,2546,,1976,,,Sparkasse Leibnitz,135
+563,2061074,"Li, Ruifeng",GM,USA,2546,,2001,,,Texas,394
+564,358878,"Nguyen, Thai Dai Van",GM,Czech Republic,2546,,2001,,,Mezinarodni Sachova,122
+565,12501255,"Moradiabadi, Elshan",GM,USA,2545,,1985,,,,204
+566,3200019,"Rogers, Ian",GM,Australia,2545,,1960,i,,,72
+567,4128125,"Kosteniuk, Alexandra",GM,Russia,2545,,1984,w,,,171
+568,4114060,"Sychev, Klementy",IM,Russia,2545,,1996,,,Sfr. Bad Emstal/Wolf,73
+569,13306677,"Hakobyan, Aram",GM,Armenia,2545,,2001,,,Yerevan,53
+570,4100387,"Ruban, Vadim",GM,Russia,2545,,1964,i,,,0
+571,13701525,"Ismagambetov, Anuar",GM,Kazakhstan,2545,,1986,,,,149
+572,8000000455,"Tarrasch, Siegbert",,Unknown,2545,,0,i,,,0
+573,2255570,"Cuenca Jimenez, Jose Fernando",GM,Spain,2544,,1987,,,FC ST.Pauli 1910 eV,182
+574,1303759,"Lampert, Jonas",IM,Germany,2544,,1997,,,Hamburger SK von 183,281
+575,708402,"Medvegy, Zoltan",GM,Hungary,2544,,1979,,,SC Eppingen,177
+576,1105680,"Markowski, Tomasz",GM,Poland,2544,,1975,,,Schachklub Koenig Pl,143
+577,4113217,"Yemelin, Vasily",GM,Russia,2544,,1976,,,,150
+578,4500261,"Kulaots, Kaido",GM,Estonia,2544,,1976,,,,254
+579,14116367,"Vorontsov, Pavlo",GM,Ukraine,2544,,1998,,,,81
+580,1704060,"Berg, Emanuel",GM,Sweden,2543,,1981,,,Schachclub Hansa Dor,299
+581,2226332,"Ibarra Jerez, Jose Carlos",GM,Spain,2543,,1985,,,SC 1934 Gelnhausen,163
+582,4600070,"Wahls, Matthias",GM,Germany,2543,,1968,i,,Hamburger SK von 183,41
+583,4130804,"Grigoriants, Sergey",GM,Russia,2543,,1983,,,SK Oetigheim,149
+584,8602387,"Gao, Rui",GM,China,2543,,1992,,,,102
+585,8603294,"Liu, Qingnan",GM,China,2543,,1992,,,,73
+586,727709,"Aczel, Gergely",GM,Hungary,2542,,1991,,,SV Esens,106
+587,12801259,"Cmilyte, Viktorija",GM,Lithuania,2542,,1983,wi,,OSG Baden-Baden,182
+588,4600118,"Hickl, Joerg",GM,Germany,2542,,1965,,,SV 1920 Hofheim,91
+589,12100030,"Al-Mudahka, Mohd",GM,Qatar,2542,,1974,i,,,95
+590,2800802,"Kogan, Arthur",GM,Israel,2542,,1974,,,SC 1934 Gelnhausen,173
+591,1701754,"Westerberg, Jonathan",IM,Sweden,2542,,1994,,,Vallentuna SK,161
+592,5061245,"Puranik, Abhimanyu",GM,India,2542,,2000,,,,114
+593,12519278,"Mosadeghpour, Masoud",GM,Iran,2542,,1997,,,Kh.Razavi,89
+594,13002759,Kyaw Mint,,Myanmar,2542,,0,i,,,5
+595,4113624,"Shipov, Sergei",GM,Russia,2541,,1966,i,,,21
+596,1203975,"Vajda, Levente",GM,Romania,2541,,1981,,,,226
+597,1121499,"Bulski, Krzysztof",GM,Poland,2541,,1987,,,SV Griesheim 1976,163
+598,2200058,"Rivas Pastor, Manuel",GM,Spain,2541,,1960,i,,,78
+599,2100045,"Lima, Darcy",GM,Brazil,2541,,1962,,,Rio de Janeiro/RJ,103
+600,13502247,"Zhigalko, Andrey",GM,Belarus,2541,,1985,,,,159
+601,8000000544,"Charousek, Rezsoe",,Unknown,2541,,0,i,,,0
+602,8000000823,"Neustadtl, Hermann",,Unknown,2541,,0,i,,,0
+603,4100794,"Kuzmin, Alexey",GM,Russia,2540,,1963,i,,,18
+604,14506254,"Saric, Ante",GM,Croatia,2540,,1984,,,TSV Schoenaich,234
+605,14110547,"Zinchenko, Yaroslav",GM,Ukraine,2540,,1987,i,,Schachclub 1919 Sieg,124
+606,4611799,"Stern, Rene",GM,Germany,2540,,1972,,,SK Koenig Tegel 1949,167
+607,2000130,"Wilder, Michael",GM,USA,2540,,1962,i,,Ohio,3
+608,2008564,"Kaidanov, Gregory",GM,USA,2540,,1959,,,,86
+609,4115031,"Volzhin, Alexander",GM,Russia,2540,,1971,i,,,15
+610,4138716,"Bocharov, Dmitry",GM,Russia,2540,,1982,,,,212
+611,5084423,Aryan Chopra,GM,India,2540,,2001,,,,61
+612,13800019,"Yurtaev, Leonid",GM,Kyrgyzstan,2540,,0,i,,,24
+613,14100096,"Tukmakov, Vladimir B",GM,Ukraine,2540,,1946,i,,,38
+614,24114928,"Tilicheev, Viacheslav",IM,Russia,2540,,1994,,,,85
+615,12800023,"Rozentalis, Eduardas",GM,Lithuania,2539,,1963,,,Lituania,270
+616,3503313,"Almeida Quintana, Omar",GM,Cuba,2539,,1981,,,,255
+617,609404,"Le Roux, Jean-Pierre",GM,France,2539,,1982,,,SK Schwaebisch Hall,209
+618,14505959,"Jankovic, Alojzije",GM,Croatia,2539,,1983,,,SC 1934 Gelnhausen,241
+619,1512668,"Christiansen, Johan-Sebastian",GM,Norway,2539,,1998,,,,108
+620,2000156,"Alburt, Lev",GM,USA,2539,,1945,i,,,4
+621,8603847,"Zeng, Chongsheng",GM,China,2539,,1993,,,,84
+622,13001841,"Thein, Dan Oo",,Myanmar,2539,,0,i,,,0
+623,14502070,"Topalovic, Zlatko",IM,Croatia,2539,,1965,i,,,21
+624,4623169,"Naumann, Alexander",GM,Germany,2538,,1979,,,Schachgesellschaft S,187
+625,813613,"Brunello, Sabino",GM,Italy,2538,,1989,,,,178
+626,7200595,"Ziska, Helgi Dam",GM,Faroe Islands,2538,,1990,,,"HT, Havnin",102
+627,2800055,"Boruchovsky, Avital",GM,Israel,2538,,1997,,,,108
+628,4119991,"Ovetchkin, Roman",GM,Russia,2538,,1973,,,,128
+629,8603693,"Xiu, Deshun",GM,China,2538,,1989,,,,131
+630,12800040,"Kveinys, Aloyzas",GM,Lithuania,2537,,1962,i,,,242
+631,4102878,"Ibragimov, Ildar",GM,Russia,2537,,1967,i,,Connecticut,390
+632,728012,"Mihok, Oliver",GM,Hungary,2537,,1993,,,Erfurter Schachklub,259
+633,1501984,"Lie, Kjetil A",GM,Norway,2537,,1980,,,,74
+634,4212312,"Pavlidis, Antonios",GM,Greece,2537,,1993,,,SG Speyer-Schwegenhe,126
+635,13302841,"Aghasaryan, Robert",GM,Armenia,2537,,1994,,,Yerevan,86
+636,604011,"Dorfman, Iossif",GM,France,2537,,1953,,,,42
+637,2000040,"Gulko, Boris",GM,USA,2537,,1947,i,,Estados Unidos,36
+638,5100011,"Hernandez Guerrero, Gilberto",GM,Mexico,2537,,1970,,,,90
+639,13503758,"Stupak, Kirill",GM,Belarus,2537,,1990,,,,206
+640,13300059,"Anastasian, Ashot",GM,Armenia,2536,,1964,i,,Yerevan,63
+641,13900463,"Svetushkin, Dmitry",GM,Moldova,2536,,1980,,,SK 1879 HD-Handschuh,341
+642,1122452,"Tazbir, Marcin",GM,Poland,2536,,1988,,,SV Griesheim 1976,192
+643,12500739,"Ghaem Maghami, Ehsan",GM,Iran,2536,,1982,,,Hamburger SK von 183,412
+644,700010,"Ribli, Zoltan",GM,Hungary,2536,,1951,,,FC Bayern Muenchen e,126
+645,14115298,"Bogdanovich, Stanislav",GM,Ukraine,2536,,1993,,,,103
+646,14129574,"Shevchenko, Kirill",GM,Ukraine,2535,,2002,,,SC Emmendingen 1937,109
+647,4202139,"Nikolaidis, Ioannis",GM,Greece,2535,,1971,,,,170
+648,725323,"Pap, Gyula",GM,Hungary,2535,,1991,i,,,139
+649,2801795,"Steinberg, Nitzan",GM,Israel,2535,,1998,,,,75
+650,4119410,"Popov, Valerij",GM,Russia,2535,,1974,,,,143
+651,4125371,"Novikov, Stanislav",GM,Russia,2535,,1985,,,,128
+652,4151976,"Frolyanov, Dmitry",GM,Russia,2535,,1986,,,,110
+653,13501720,"Maiorov, Nikita",GM,Belarus,2535,,1985,,,,193
+654,14100932,"Brodsky, Michail",GM,Ukraine,2535,,1969,,,,120
+655,14928752,"Gazik, Viktor",IM,Slovakia,2535,,2001,,,Liptovska Sachova Sk,131
+656,5004225,"Sandipan, Chanda",GM,India,2534,,1983,,,Schachgesellschaft S,235
+657,1121219,"Czarnota, Pawel",GM,Poland,2534,,1988,,,Schachverein Wattens,115
+658,4611268,"Boensch, Uwe",GM,Germany,2534,,1958,,,USV TU Dresden,85
+659,11600039,"Kengis, Edvins",GM,Latvia,2534,,1959,,,,67
+660,8607508,"Li, Di",IM,China,2534,,1999,,,,48
+661,3509265,"Garcia Pantoja, Roberto",IM,Cuba,2534,,1992,,,,105
+662,4124650,"Smikovski, Ivan",IM,Russia,2534,,1972,i,,,31
+663,5011132,Deepan Chakkravarthy J,GM,India,2534,,1987,,,,188
+664,13400665,"Abbasov, Farid",GM,Azerbaijan,2534,,1979,,,,106
+665,2011255,"Schwartzman, Gabriel",GM,USA,2533,,1976,i,,Florida,54
+666,13400363,"Guliyev, Namig",GM,Azerbaijan,2533,,1974,,,SC Eppingen,333
+667,2108356,"Diamant, Andre",GM,Brazil,2533,,1990,,,,149
+668,1004689,"Ernst, Sipke",GM,Netherlands,2533,,1979,,,Hamburger SK von 183,252
+669,325740,"Plat, Vojtech",GM,Czech Republic,2533,,1994,,,SC Weiler im Allgaeu,375
+670,411477,"Gordon, Stephen J",GM,England,2533,,1986,,,SG Trier,108
+671,2908549,"Dimitrov, Radoslav",GM,Bulgaria,2533,,1993,,,,139
+672,4152786,"Kozhakin, Vladimir",FM,Russia,2533,,1957,i,,,6
+673,4156013,"Obolenskikh, Dmitry",IM,Russia,2533,,1985,,,,96
+674,13402390,"Rasulov, Vugar",GM,Azerbaijan,2533,,1991,,,Azerbaidjan,121
+675,1205730,"Nevednichy, Vladislav",GM,Romania,2532,,1969,,,Cs Aem Luxten Timiso,259
+676,4600347,"Mueller, Karsten",GM,Germany,2532,,1970,i,,Hamburger SK von 183,63
+677,4611420,"Luther, Thomas",GM,Germany,2532,,1969,,,SK Weilheim e.V.,306
+678,13303635,"Harutyunian, Tigran K",IM,Armenia,2532,,1997,,,Yerevan,101
+679,3202534,"Zhao, Zong-Yuan",GM,Australia,2532,,1986,,,NSW,78
+680,4203380,"Miladinovic, Igor",GM,Serbia,2532,,1974,,,,197
+681,5024854,"Debashis, Das",GM,India,2532,,1993,,,,148
+682,25059530,Praggnanandhaa R,GM,India,2532,,2005,,,,110
+683,8000000949,"Lovegrove, Walter Romaine",,Unknown,2532,,0,i,,,0
+684,2800080,"Kosashvili, Yona",GM,Israel,2531,,1970,i,,,15
+685,1200020,"Marin, Mihail",GM,Romania,2531,,1965,,,Acs De Sah Apa Nova,131
+686,315303,"Zilka, Stepan",GM,Czech Republic,2531,,1988,,,Novoborsky Sk,153
+687,24638056,"Dann, Matthias",IM,Germany,2531,,1991,,,DJK Aufwaerts St. Jo,130
+688,4600193,"Lutz, Christopher",GM,Germany,2531,,1971,,,Schachgemeinschaft P,108
+689,3508129,"Guerra Mendez, Jose Angel",GM,Spain,2531,,1988,,,,138
+690,2107660,"Mekhitarian, Krikor Sevag",GM,Brazil,2531,,1986,,,,209
+691,4111990,"Khanin, Semen",IM,Russia,2531,,1999,,,,106
+692,8603189,"Wan, Yunguo",GM,China,2531,,1990,,,,133
+693,12800104,"Ruzele, Darius",GM,Lithuania,2531,,1968,i,,,4
+694,13600095,"Sturua, Zurab",GM,Georgia,2531,,1959,,,,40
+695,24176460,"Sorokin, Aleksey",FM,Russia,2531,,2000,,,,91
+696,13602926,"Margvelashvili, Giorgi",GM,Georgia,2530,,1990,i,,,144
+697,720852,"Gonda, Laszlo",GM,Hungary,2530,,1988,,,MTV Tostedt,258
+698,400580,"Parker, Jonathan F",GM,England,2530,,1976,,,Cavendish,30
+699,4100875,"Ionov, Sergey",GM,Russia,2530,,1962,i,,,51
+700,4100921,"Tseshkovsky, Vitaly",GM,Russia,2530,,0,i,,,82
+701,4103050,"Budnikov, Alexandar",IM,Russia,2530,,1967,i,,,0
+702,4600061,"Schmid, Lothar",GM,Germany,2530,,1928,i,,,0
+703,13300237,"Danielian, Oganes",GM,Armenia,2530,,1974,i,,,10
+704,11000000005,"Euwe, Machgielis",GM,Netherlands,2530,,1901,i,,,0
+705,14109743,"Aveskulov, Valeriy",GM,Ukraine,2529,,1986,i,,,77
+706,2008572,"Shabalov, Alexander",GM,USA,2529,,1967,,,Pennsylvania,560
+707,2300044,"Hjartarson, Johann",GM,Iceland,2529,,1963,,,,54
+708,1013068,"Pruijssers, Roeland",GM,Netherlands,2529,,1989,,,DJK Aufwaerts St. Jo,192
+709,700045,"Pinter, Jozsef",GM,Hungary,2529,,1953,,,BG Buchen,180
+710,2260735,"Asis Gargatagli, Hipolito",IM,Spain,2529,,1986,,,,125
+711,2037602,"Brown, Michael William",IM,USA,2529,,1997,,,California,227
+712,5900727,"Kelires, Andreas",GM,Greece,2529,,1999,,,,73
+713,2106981,"El Debs, Felipe De Cresce",GM,Brazil,2529,,1985,,,,102
+714,2900130,"Kolev, Atanas",GM,Bulgaria,2529,,1967,,,,77
+715,3408027,"Flores Rios, Mauricio",GM,Chile,2529,,1990,i,,,55
+716,46616543,Gukesh D,IM,India,2529,,2006,,,,51
+717,8000000448,"Hruby, Vincenz",,Unknown,2529,,0,i,,,0
+718,1205064,"Szabo, Gergely-Andras-Gyula",GM,Romania,2528,,1983,,,Schachvereinigung 19,219
+719,723762,"Fodor, Tamas Jr",GM,Hungary,2528,,1991,,,USV Halle,230
+720,4120213,"Belozerov, Andrei",GM,Russia,2528,,1977,,,,88
+721,2000121,"Kavalek, Lubomir",GM,USA,2527,,1943,i,,Virginia,0
+722,2613280,"Preotu, Razvan",GM,Canada,2527,,1999,,,,69
+723,4135229,"Anisimov, Pavel",IM,Russia,2527,,1986,,,,59
+724,13700278,"Kotsur, Pavel",GM,Kazakhstan,2527,,1974,,,,115
+725,14104954,"Bagrationi, Alexander",GM,Ukraine,2527,,1990,,,,53
+726,14109476,"Tukhaev, Adam",GM,Ukraine,2527,,1988,,,,139
+727,8000000112,"Seguin, C A",,Unknown,2527,,0,i,,,0
+728,8000000446,"Chamier, Edward",,Unknown,2527,,0,i,,,0
+729,8000000559,"Atkins, Henry Ernest",,Unknown,2527,,0,i,,,0
+730,13601270,"Shengelia, David",GM,Austria,2526,,1980,,,Schachklub Baden,211
+731,4144031,"Danin, Alexandre",GM,Russia,2526,,1986,,,Freibauer Moerlenbac,210
+732,3507548,"Gonzalez Zamora, Juan Carlos",GM,Mexico,2526,,1968,,,,101
+733,4107730,"Shchekachev, Andrei",GM,France,2526,,1972,,,,236
+734,4122747,"Shariyazdanov, Andrey",GM,Russia,2526,,1976,i,,,71
+735,7101384,"Megaranto, Susanto",GM,Indonesia,2526,,1987,,,,130
+736,14602377,"Beliavsky, Alexander G",GM,Slovenia,2526,,1953,,,,137
+737,24183750,"Lobanov, Sergei",IM,Russia,2526,,2001,,,,73
+738,35009192,Erigaisi Arjun,GM,India,2526,,2003,,,,89
+739,14104911,"Sikula, Vaszilij",GM,Ukraine,2525,,1981,i,,,73
+740,4119002,"Rustemov, Alexander",GM,Russia,2525,,1973,i,,Schachverein Wattens,82
+741,24692018,"Noe, Christopher",IM,Germany,2525,,1996,,,SC Eppingen,159
+742,2900440,"Chatalbashev, Boris",GM,Denmark,2525,,1974,,,SC Remagen-Sinzig,240
+743,14102811,"Borovikov, Vladislav",GM,Ukraine,2525,,1973,,,Schachclub 1919 Sieg,140
+744,13400681,"Babaev, Rashad",GM,Azerbaijan,2525,,1981,i,,,94
+745,1300113,"Georgiadis, Nico",GM,Switzerland,2525,,1996,,,,116
+746,1438832,"Thybo, Jesper Sondergaard",IM,Denmark,2525,,1999,,,Skive,64
+747,6300529,"Ali Marandi, Cemil Can",GM,Turkey,2525,,1998,,,,106
+748,14000563,"Annaberdiev, Meilis",IM,Turkmenistan,2525,,1985,,,,74
+749,8000000316,"Hosmer, Henry",,Unknown,2525,,0,i,,,0
+750,5030692,Vishnu Prasanna V,GM,India,2524,,1989,,,TSV Schoenaich,158
+751,12800112,"Sulskis, Sarunas",GM,Lithuania,2524,,1972,,,SV Koblenz 03/25,260
+752,4100379,"Dvoirys, Semen I",GM,Russia,2524,,1958,,,,160
+753,4155351,"Moskalenko, Alexander",GM,Russia,2524,,1988,,,,71
+754,4300033,"Cheng, Bobby",IM,Australia,2524,,1997,,,VIC,92
+755,24105074,"Iljiushenok, Ilia",GM,Russia,2524,,1993,,,,90
+756,13601865,"Aroshidze, Levan",GM,Spain,2523,,1985,,,Banyoles,151
+757,2300087,"Stefansson, Hannes",GM,Iceland,2523,,1972,,,,181
+758,1208110,"Jianu, Vlad-Cristian",GM,Romania,2523,,1984,,,Csm Lugoj,168
+759,3507165,"Ortiz Suarez, Isan Reynaldo",GM,Cuba,2523,,1985,,,,211
+760,4642325,"Prusikin, Michael",GM,Germany,2523,,1978,,,BCA Augsburg,231
+761,14101440,"Berelowitsch, Alexander",GM,Germany,2523,,1967,,,Duesseldorfer Schach,194
+762,2000091,"Benjamin, Joel",GM,USA,2523,,1964,,,California,92
+763,4120965,"Prokopchuk, Evgeny",GM,Russia,2523,,1978,i,,,23
+764,8000000038,"Suhle, Berthold",,Unknown,2523,,0,i,,,0
+765,1108760,"Cyborowski, Lukasz",GM,Poland,2522,,1980,,,SG Trier,165
+766,2200074,"Magem Badals, Jordi",GM,Spain,2522,,1967,,,,89
+767,600113,"Hauchard, Arnaud",GM,France,2522,,1971,,,,95
+768,25006711,"Chandra, Akshat",GM,USA,2522,,1999,,,New Jersey,173
+769,402893,"Turner, Matthew J",GM,Scotland,2522,,1975,,,,68
+770,931152,"Bogosavljevic, Boban",GM,Serbia,2522,,1988,,,SV Deggendorf,109
+771,2012642,"Serper, Grigory",GM,USA,2522,,1969,i,,,37
+772,3409350,"Henriquez Villagra, Cristobal",GM,Chile,2522,,1996,,,,139
+773,4194128,"Kiselev, Vitaliy",GM,Russia,2522,,1988,,,,83
+774,5702895,"Yeoh, Li Tian",IM,Malaysia,2522,,1999,,,,86
+775,4500016,"Ehlvest, Jaan",GM,USA,2521,,1962,,,New York,576
+776,1132253,"Sadzikowski, Daniel",GM,Poland,2521,,1994,,,SC Heusenstamm,189
+777,705713,"Ruck, Robert",GM,Hungary,2521,,1977,,,SC Eppingen,174
+778,866970,"Basso, Pier Luigi",GM,Italy,2521,,1997,,,,155
+779,912123,"Nenezic, Marko",IM,Serbia,2521,,1995,,,,82
+780,13601784,"Shanava, Konstantine",GM,Georgia,2521,,1985,,,,180
+781,13800124,"Magai, Vladimir",IM,Kyrgyzstan,2521,,1968,i,,,3
+782,24183555,"Afanasiev, Nikita",FM,Russia,2521,,2000,,,,106
+783,2015315,"Stripunsky, Alexander",GM,USA,2520,,1970,,,New Jersey,1000
+784,14400057,"Kurajica, Bojan",GM,Croatia,2520,,1947,,,BOSNA,195
+785,4122259,"Kosyrev, Vladimir",GM,Russia,2520,,1980,i,,,45
+786,14500310,"Zelcic, Robert",GM,Croatia,2520,,1965,,,SK Kirchweyhe 1947,342
+787,708003,"Horvath, Adam",GM,Hungary,2520,,1981,,,SG Speyer-Schwegenhe,213
+788,1910850,"Ferreira, Jorge Viterbo",GM,Portugal,2520,,1994,,,Gd Dias Ferreira,204
+789,100137,"Zarnicki, Pablo",GM,Argentina,2520,,1972,i,,,23
+790,1000039,"Sosonko, Gennadi",GM,Netherlands,2520,,1943,i,,,10
+791,4100468,"Makarichev, Sergey",GM,Russia,2520,,1953,i,,,0
+792,4107969,"Zakharevich, Igor",IM,Russia,2520,,0,i,,,44
+793,4174003,"Belous, Vladimir",GM,Russia,2520,,1993,,,,193
+794,4197143,"Demidov, Mikhail",IM,Russia,2520,,1992,,,,132
+795,8605564,"Xu, Yi",IM,China,2520,,1998,,,,46
+796,2011352,"Bhat, Vinay",GM,USA,2519,,1984,i,,California,358
+797,4201990,"Mastrovasilis, Athanasios",GM,Greece,2519,,1979,,,Florina Cultural Clu,173
+798,300535,"Votava, Jan",GM,Czech Republic,2519,,1974,,,Erfurter Schachklub,131
+799,1004816,"Janssen, Ruud",GM,Netherlands,2519,,1979,,,Schachklub Turm Emsd,150
+800,4600169,"Schlosser, Philipp",GM,Germany,2519,,1968,,,OSG Baden-Baden,213
+801,110833,"Claverie, Raul",IM,Argentina,2519,,1983,,,,112
+802,114286,"Iermito, Sebastian",IM,Argentina,2519,,1993,,,,101
+803,2224267,"Moreno Carnero, Javier",GM,Spain,2519,,1975,i,,,46
+804,12511412,"Pourramezanali, Amirreza",GM,Iran,2519,,1992,,,Gilan,165
+805,14201356,"Kvon, Andrey",GM,Uzbekistan,2519,,1989,,,,40
+806,14203049,"Kuybokarov, Temur",IM,Australia,2519,,2000,,,,77
+807,8000000020,"Popert, William M",,Unknown,2519,,0,i,,,0
+808,8000000475,"Harmonist, Max",,Unknown,2519,,0,i,,,0
+809,2000075,"Dlugy, Maxim",GM,USA,2518,,1966,i,,New Jersey,140
+810,4100654,"Yakovich, Yuri",GM,Russia,2518,,1962,i,,,90
+811,13400495,"Ibrahimov, Rasul",GM,Azerbaijan,2518,,1981,i,,,91
+812,2217880,"Moreno Trujillo, Alejandro",IM,Spain,2518,,1985,,,,89
+813,1700014,"Andersson, Ulf",GM,Sweden,2518,,1951,,,Duesseldorfer Schach,162
+814,400050,"Chandler, Murray G",GM,New Zealand,2518,,1960,i,,,28
+815,1129775,"Matuszewski, Michal",IM,Poland,2518,,1993,,,,103
+816,3520773,"Quesada Perez, Luis Ernesto",GM,Cuba,2518,,1999,,,,19
+817,4115333,"Zakhartsov, Viacheslav V",GM,Russia,2518,,1968,,,,140
+818,4119240,"Lastin, Alexander",GM,Russia,2518,,1976,i,,,103
+819,4151984,"Geller, Jakov",GM,Russia,2518,,1986,i,,,136
+820,307424,"Cvek, Robert",GM,Czech Republic,2517,,1979,,,Novoborsky Sk,169
+821,4155890,"Krivoborodov, Egor",GM,Russia,2517,,1989,,,SC Garching 1980 e.V,147
+822,4171055,"Lintchevski, Daniil",GM,Russia,2517,,1990,,,,205
+823,4169786,"Potapov, Pavel",GM,Russia,2517,,1990,,,,167
+824,14602296,"Sebenik, Matej",GM,Slovenia,2517,,1983,,,SV RAIKA RAPID FEFFE,198
+825,615536,"Dunis, Aurelien",IM,France,2517,,1979,i,,,63
+826,1141686,"Nasuta, Grzegorz",GM,Poland,2517,,1996,,,,111
+827,2022320,"Arnold, Marc",GM,USA,2517,,1992,,,,96
+828,2802341,"Yudasin, Leonid",GM,Israel,2517,,1959,i,,,113
+829,3206882,"Tan, Justin",GM,Australia,2517,,1997,,,,129
+830,3504727,"Martinez Duany, Lelys Stanley",GM,Cuba,2517,,1985,,,,210
+831,5005779,"Venkatesh, M R",GM,India,2517,,1985,,,PSPB,176
+832,12401153,"Le, Tuan Minh",IM,Vietnam,2517,,1996,,,,64
+833,14401487,"Atalik, Suat",GM,Turkey,2516,,1964,,,,195
+834,1121251,"Olszewski, Michal",GM,Poland,2516,,1989,,,SK Norderstedt von 1,167
+835,303739,"Oral, Tomas",GM,Czech Republic,2516,,1977,,,Sk Joly Lysa Nad Lab,101
+836,4401190,"Cuartas, Jaime Alexander",GM,Colombia,2516,,1975,,,Montcada,122
+837,1010697,"Burg, Twan",GM,Netherlands,2516,,1990,,,DJK Aufwaerts St. Jo,276
+838,2906074,"Iotov, Valentin",GM,Bulgaria,2516,,1988,i,,,195
+839,2800039,"Greenfeld, Alon",GM,Israel,2516,,1964,,,SV Lingen,129
+840,400033,"Speelman, Jon S",GM,England,2516,,1956,,,"Wood Green, Hilsmark",70
+841,3507424,"Espinosa Veloz, Ermes",GM,Cuba,2516,,1987,,,,113
+842,4102240,"Shcherbakov, Ruslan",GM,Russia,2516,,1969,i,,,29
+843,4119231,"Kiriakov, Petr",GM,Russia,2516,,1975,,,,51
+844,11600306,"Sokolov, Andrei",IM,Latvia,2516,,1972,,,,16
+845,14113325,"Shtembuliak, Evgeny",IM,Ukraine,2516,,1999,,,,99
+846,8000000470,"Lipschuetz, S",,Unknown,2516,,0,i,,,0
+847,14505320,"Jovanovic, Zoran",GM,Croatia,2515,,1979,,,SK Kirchweyhe 1947,291
+848,14100100,"Moskalenko, Viktor",GM,Spain,2515,,1960,,,E.E.B.,193
+849,4167570,"Gunina, Valentina",GM,Russia,2515,,1989,w,,SC Bad Koenigshofen,232
+850,1039792,"Van Foreest, Lucas",GM,Netherlands,2515,,2001,,,DJK Aufwaerts St. Jo,96
+851,4170083,"Matsenko, Sergei",GM,Russia,2515,,1990,,,,150
+852,24615137,"Poetsch, Hagen",GM,Germany,2515,,1991,,,SC Heusenstamm,275
+853,1112848,"Jakubowski, Krzysztof",GM,Poland,2515,,1983,,,Schachfreunde Berlin,144
+854,405248,"Haslinger, Stewart G",GM,England,2515,,1981,i,,SG Trier,84
+855,14504081,"Jovanic, Ognjen",GM,Croatia,2515,,1978,,,,214
+856,103640,"German, Gustavo",,Argentina,2515,,1978,i,,,0
+857,818860,"Valsecchi, Alessio",IM,Italy,2515,,1992,,,,150
+858,2600170,"Lesiege, Alexandre",GM,Canada,2515,,1975,,,,24
+859,13400142,"Magerramov, Elmar",GM,Azerbaijan,2515,,1958,i,,,47
+860,1104306,"Macieja, Bartlomiej",GM,Poland,2514,,1977,,,,200
+861,2905434,"Rusev, Krasimir",GM,Bulgaria,2514,,1983,,,SC Untergrombach 46,219
+862,615013,"Wirig, Anthony",GM,France,2514,,1983,,,SK Schwaebisch Hall,296
+863,300560,"Polak, Tomas",GM,Czech Republic,2514,,1974,,,SC Heusenstamm,253
+864,3803457,"Terry, Renato",IM,Peru,2514,,1992,,,,62
+865,111724,"Obregon, Andres Carlos",GM,Argentina,2514,,1986,i,,,74
+866,1506102,"Urkedal, Frode Olav Olsen",GM,Norway,2514,,1993,,,,119
+867,4121376,"Koniushkov, Igor",GM,Russia,2514,,1962,i,,,0
+868,12801747,"Gavrikov, Viktor",GM,Lithuania,2514,,1957,i,,,20
+869,13001850,Aung Naing,,Myanmar,2514,,1972,,,,1
+870,14116502,"Sivuk, Vitaly",GM,Ukraine,2514,,1992,,,,164
+871,24101940,"Zanan, Evgeny",IM,Israel,2514,,1998,,,,77
+872,8000000012,"Harrwitz, Daniel",,Unknown,2514,,0,i,,,0
+873,8000002804,"Neill, Benjamin Milnes",,Unknown,2514,,0,i,,,0
+874,2801485,"Har-Zvi, Ronen",GM,Israel,2513,,1976,i,,,29
+875,11602945,"Kantans, Toms",GM,Latvia,2513,,1994,,,SG Speyer-Schwegenhe,265
+876,4128737,"Kunin, Vitaly",GM,Germany,2513,,1983,,,Freibauer Moerlenbac,377
+877,14900017,"Ftacnik, Lubomir",GM,Slovakia,2513,,1957,,,Hamburger SK von 183,245
+878,633046,"Vernay, Clovis",IM,France,2513,,1989,,,,166
+879,200018,"Winants, Luc",GM,Belgium,2513,,1963,,,,143
+880,2800705,"Zoler, Dan",GM,Israel,2513,,1974,,,,94
+881,4127854,"Gazarian, Aram",GM,Russia,2513,,1983,i,,,7
+882,4129954,"Ermakov, Evgeny",IM,Russia,2513,,1965,i,,,2
+883,4500024,"Ladva, Ottomar",GM,Estonia,2513,,1997,,,,149
+884,8603642,"Tan, Zhongyi",GM,China,2513,,1991,w,,,149
+885,13601903,"Dzagnidze, Nana",GM,Georgia,2513,,1987,w,,,167
+886,8000001002,"Von Feyerfeil, Emil Ritter",,Unknown,2513,,0,i,,,0
+887,2005492,"Yermolinsky, Alex",GM,USA,2512,,1958,,,South Dakota,369
+888,1209272,"Murariu, Andrei",GM,Romania,2512,,1986,,,Cs Aem Luxten Timiso,118
+889,14104490,"Firman, Nazar",GM,Ukraine,2512,,1983,,,Schachfreunde Essen-,149
+890,827061,"Stella, Andrea",GM,Italy,2512,,1993,,,,145
+891,1506536,"Notkevich, Benjamin Arvola",GM,Norway,2512,,1993,,,,98
+892,4123700,"Moiseenko, Vadim",GM,Russia,2512,,1994,,,,98
+893,4142586,"Chebotarev, Oleg",,Russia,2512,,1985,,,,49
+894,4182596,"Levin, Evgeny A",GM,Russia,2512,,1990,,,,127
+895,8604940,"Xu, Yinglun",GM,China,2512,,1996,,,,55
+896,2300010,"Olafsson, Helgi",GM,Iceland,2511,,1956,,,,75
+897,927031,"Popovic, Dusan",GM,Serbia,2511,,1983,,,SV Deggendorf,155
+898,4600045,"Bischoff, Klaus",GM,Germany,2511,,1961,,,FC Bayern Muenchen e,118
+899,1634852,"Dragnev, Valentin",GM,Austria,2511,,1999,,,Sk Wien-Ottakring,160
+900,4131606,"Zablotsky, Sergei",GM,Russia,2511,,1982,i,,,79
+901,5021103,"Grover, Sahaj",GM,India,2511,,1995,,,,193
+902,6300545,"Sanal, Vahap",GM,Turkey,2511,,1998,,,19838276600,137
+903,12513342,"Gholami, Aryan",IM,Iran,2511,,2001,,,Mazandaran,180
+904,14108640,"Mirzoev, Emil",IM,Ukraine,2511,,1996,,,,101
+905,8000000388,"Chigorin, Mikhail Ivanovich",,Unknown,2511,,0,i,,,0
+906,8000000521,"Walbrodt, Carl August",,Unknown,2511,,0,i,,,0
+907,400181,"Conquest, Stuart C",GM,England,2510,,1967,i,,4NCL Guildford,129
+908,700118,"Horvath, Csaba",GM,Hungary,2510,,1968,,,SF Schwerin,239
+909,1706446,"Tikkanen, Hans",GM,Sweden,2510,,1985,,,Schachclub Hansa Dor,219
+910,937614,"Roganovic, Milos",GM,Serbia,2510,,1991,,,SK Passau 1869,77
+911,4100972,"Ikonnikov, Vyacheslav",GM,Russia,2510,,1966,,,SF Bad Mergentheim,332
+912,642274,"Demuth, Adrien",GM,France,2510,,1991,,,SF Deizisau,231
+913,2115824,"Barbosa, Evandro Amorim",GM,Brazil,2510,,1992,,,,158
+914,208027,"Ringoir, Tanguy",GM,Belgium,2510,,1994,,,,149
+915,406465,"Gormally, Daniel W",GM,England,2510,,1976,,,4NCL Cheddleton,134
+916,2800047,"Rechlis, Gad",GM,Israel,2510,,1967,,,,25
+917,11600462,"Krakops, Maris",GM,Latvia,2510,,1978,i,,,9
+918,14122480,"Vetoshko, Volodymyr",GM,Ukraine,2510,,1998,,,,87
+919,54178894,"Vegera, Vladimir",,Russia,2510,,1955,i,,,1
+920,13300512,"Khachiyan, Melikset",GM,USA,2509,,1970,,,California,394
+921,2600013,"Spraggett, Kevin",GM,Canada,2509,,1954,,,B2447,197
+922,916366,"Stojanovic, Mihajlo",GM,Serbia,2509,,1977,,,BG Buchen,280
+923,4601556,"Heinemann, Thies",GM,Germany,2509,,1971,,,Hamburger SK von 183,70
+924,12940690,"Keymer, Vincent",IM,Germany,2509,,2004,,,SF Deizisau,78
+925,1204580,"Nanu, Costica-Ciprian",GM,Romania,2509,,1977,,,Cs Dinamo Bucuresti,168
+926,1206370,"Mateuta, Gabriel",IM,Romania,2509,,1980,,,Cotnari-Politehnica,76
+927,1132199,"Krzyzanowski, Marcin",IM,Poland,2509,,1994,,,"MKS ""Polonia"" Warsza",137
+928,2811154,"Raznikov, Danny",GM,Israel,2509,,1993,,,,130
+929,4101375,"Ivanov, Sergey",GM,Russia,2509,,1961,,,,60
+930,4156021,"Iljin, Artem",GM,Russia,2509,,1987,,,,75
+931,14100053,"Eingorn, Vereslav S",GM,Ukraine,2509,,1956,,,,60
+932,25012223,Visakh N R,IM,India,2509,,1999,,,,164
+933,2009161,"Sokolin, Leonid",IM,USA,2508,,1966,i,,New Jersey,59
+934,14104202,"Malakhatko, Vadim",GM,Belgium,2508,,1977,,,Schachverein Muelhei,405
+935,1900072,"Galego, Luis",GM,Portugal,2508,,1966,,,Acr Vale Cambra/Osca,208
+936,3202305,"Smerdon, David C",GM,Australia,2508,,1984,i,,,127
+937,4600924,"Appel, Ralf",GM,Germany,2508,,1971,i,,SC Pirmasens 1912,54
+938,2214679,"Fernandez Romero, Ernesto",GM,Spain,2508,,1983,,,,121
+939,1019716,"Admiraal, Miguoel",IM,Netherlands,2508,,1994,,,Sportfreunde Katernb,89
+940,121576,"Sosa, Tomas",IM,Argentina,2508,,1998,,,,80
+941,2105446,"Di Berardino, Diego Rafael",IM,Brazil,2508,,1987,,,,104
+942,5019141,"Shyam, Sundar M",GM,India,2508,,1992,,,Madurai,178
+943,8602298,"Lin, Chen",GM,China,2508,,1988,,,,59
+944,4600037,"Lobron, Eric",GM,Germany,2507,,1960,,,SG 1868 Aljech. Soli,28
+945,1201530,"Manolache, Marius",GM,Romania,2507,,1973,,,Cs Studentesc Medici,200
+946,330027,"Kriebel, Tadeas",IM,Czech Republic,2507,,1995,,,Novoborsky Sk,153
+947,409200,"Ghasi, Ameet K",IM,England,2507,,1987,,,4NCL e2e4.org.uk,57
+948,922692,"Stojanovic, Dalibor",GM,Bosnia & Herz.,2507,,1983,,,,172
+949,4116194,"Lugovoi, Aleksei",GM,Russia,2507,,1975,,,SANKTPETERBURGA,45
+950,4159659,"Yudin, Sergei",GM,Russia,2507,,1986,,,,117
+951,5029104,"Stany, G A",IM,India,2507,,1993,,,,149
+952,8600678,"Li, Shilong",GM,China,2507,,1977,,,,122
+953,14103516,"Vysochin, Spartak",GM,Ukraine,2507,,1975,,,,151
+954,14105403,"Savinov, Viktor",IM,Ukraine,2507,,1966,i,,,5
+955,8000000006,"Staunton, Howard",,Unknown,2507,,0,i,,,0
+956,2205092,"Arizmendi Martinez, Julen Luis",GM,Spain,2506,,1976,,,Eva Manises,131
+957,3404650,"Castellanos Rodriguez, Renier",IM,Spain,2506,,1982,,,Alzira,127
+958,605492,"Nataf, Igor-Alexandre",GM,France,2506,,1978,i,,,112
+959,2069342,"Checa, Nicolas",IM,USA,2506,,2001,,,,66
+960,2809958,"Baron, Tal",GM,Israel,2506,,1992,,,,129
+961,2901188,"Petkov, Vladimir",GM,Bulgaria,2506,,1971,,,,288
+962,3500012,"Arencibia Rodriguez, Walter",GM,Cuba,2506,,1967,i,,,91
+963,3501728,"Becerra Rivero, Julio",GM,USA,2506,,1973,,,,126
+964,4402669,"Gallego Alcaraz, Andres Felipe",GM,Colombia,2506,,1989,,,,149
+965,13500031,"Dydyshko, Viacheslav",GM,Belarus,2506,,1949,i,,,67
+966,13500945,"Smetankin, Stanislav",IM,Belarus,2506,,1980,i,,,34
+967,8000001703,"Teed, Frank Melville",,Unknown,2506,,0,i,,,0
+968,2804140,"Golod, Vitali",GM,Israel,2505,,1971,,,Schachverein Muelhei,184
+969,2602504,"Charbonneau, Pascal",GM,Canada,2505,,1983,i,,,124
+970,1107836,"Blehm, Pawel",GM,Poland,2505,,1980,i,,,50
+971,2907313,"Grigorov, Grigor",GM,Bulgaria,2505,,1987,,,,107
+972,14100045,"Shneider, Aleksandr",GM,Ukraine,2505,,1962,i,,SC Boeblingen 1975 e,48
+973,3700267,"Cubas, Jose Fernando",GM,Paraguay,2505,,1981,,,,188
+974,401978,"Kumaran, Dharshan",GM,England,2505,,1975,i,,,3
+975,2021030,"Hungaski, Robert",GM,USA,2505,,1987,,,,126
+976,921661,"Muratovic, Alija",GM,Serbia,2505,,1962,i,,,31
+977,1111078,"Antoniewski, Rafal",GM,Poland,2505,,1980,,,Sv Pamhagen,138
+978,2000237,"Rogoff, Kenneth",GM,USA,2505,,1953,i,,,0
+979,2000288,"Ivanov, Igor V",IM,USA,2505,,0,i,,,25
+980,3405400,"Morovic Fernandez, Ivan",GM,Chile,2505,,1963,,,,42
+981,4100417,"Machulsky, Anatoly D",GM,Russia,2505,,1956,i,,,0
+982,4101103,"Makarov, Marat",GM,Russia,2505,,1963,i,,,56
+983,8604398,"Yang, Kaiqi",IM,Canada,2505,,1988,,,,86
+984,14101270,"Komarov, Dimitri",GM,Ukraine,2505,,1968,i,,,102
+985,14200880,"Kayumov, Sergey",GM,Uzbekistan,2505,,1981,i,,,117
+986,14205483,"Sindarov, Javokhir",IM,Uzbekistan,2505,,2005,,,,51
+987,2034255,"Zierk, Steven",GM,USA,2504,,1993,,,Massachusetts,174
+988,4663306,"Schneider, Ilja",IM,Germany,2504,,1984,,,Schachfreunde Berlin,314
+989,300020,"Smejkal, Jan",GM,Czech Republic,2504,,1946,i,,Sk Holdia Dp Praha,2
+990,1005030,"Dambacher, Martijn",GM,Netherlands,2504,,1979,,,DJK Aufwaerts St. Jo,173
+991,1613782,"Beim, Valeri",GM,Austria,2504,,1950,,,TV Tegernsee,53
+992,113816,"Tristan, Leonardo",IM,Argentina,2504,,1989,,,,131
+993,700096,"Adorjan, Andras",GM,Hungary,2504,,1950,i,,,0
+994,2000512,"Sherzer, Alex",GM,USA,2504,,1971,i,,Zalaegerszeg,8
+995,4147103,"Goryachkina, Aleksandra",GM,Russia,2504,,1998,w,,,138
+996,4401824,"Barrientos, Sergio E",GM,Colombia,2504,,1986,,,,221
+997,5024366,"Anurag, Mhamal",GM,India,2504,,1995,,,,128
+998,14122286,"Triapishko, Alexandr",IM,Russia,2504,,2000,,,,93
+999,8000000426,"Moehle, Charles A",,Unknown,2504,,0,i,,,0
+1000,14501228,"Rogic, Davor",GM,Croatia,2503,,1971,,,SC Untergrombach 46,159

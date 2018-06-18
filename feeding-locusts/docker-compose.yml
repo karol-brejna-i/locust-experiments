@@ -1,0 +1,67 @@
+version: '3'
+services:
+  master:
+    container_name: master
+    hostname: master
+    ports:
+     - "8089:8089"
+     - "5557:5557"
+     - "5558:5558"
+    image: "grubykarol/locust:0.9.0-python3.6-alpine3.9"
+    environment:
+      ATTACKED_HOST: http://sut
+      LOCUST_MODE: master
+      LOCUST_MASTER_BIND_PORT: 5557
+      FEEDER_BIND_PORT: 5555
+      TASK_DELAY: 10
+      QUIET_MODE: "${QUIET_MODE:-false}"
+    volumes:
+      - ./locust-scripts:/locust
+
+  slave:
+    image: "grubykarol/locust:0.9.0-python3.6-alpine3.9"
+    environment:
+      ATTACKED_HOST: http://sut
+      LOCUST_MODE: slave
+      LOCUST_MASTER: master
+      LOCUST_MASTER_BIND_PORT: 5557
+      FEEDER_HOST: master
+      FEEDER_BIND_PORT: 5555
+      TASK_DELAY: 10
+      QUIET_MODE: "${QUIET_MODE:-false}"
+      NO_PROXY: master
+    volumes:
+      - ./locust-scripts:/locust
+
+  standalone:
+    image: "grubykarol/locust:0.9.0-python3.6-alpine3.9"
+    container_name: standalone
+    hostname: standalone
+    ports:
+     - "8189:8189"
+    environment:
+      ATTACKED_HOST: http://sut
+      LOCUST_MODE: standalone
+      FEEDER_HOST: standalone
+      FEEDER_BIND_PORT: 5555
+      TASK_DELAY: 0
+      QUIET_MODE: "${QUIET_MODE:-false}"
+      LOCUST_OPTS: "--web-port 8189"
+      NO_PROXY: standalone
+    volumes:
+      - ./locust-scripts:/locust
+
+  # test endpoint
+  httpbin:
+    image: "kennethreitz/httpbin"
+    container_name: httpbin
+    hostname: httpbin
+  sut:
+    image: "lucascimon/nginx-logging-proxy"
+    container_name: sut
+    hostname: sut
+    environment:
+      PROXIED_ENDPOINT: http://httpbin:80
+      LISTENING_PORT: 80
+    ports:
+      - "80:80"
