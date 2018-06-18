@@ -6,6 +6,7 @@ import time
 from locust import TaskSet, task, events, Locust
 
 from additional_handlers import additional_success_handler, additional_failure_handler
+from confluent_client import KafkaConfluentClient
 from kafka_client import KafkaClient
 
 WORK_DIR = os.path.dirname(__file__)
@@ -29,7 +30,7 @@ class KafkaLocust(Locust):
     def __init__(self, *args, **kwargs):
         super(KafkaLocust, self).__init__(*args, **kwargs)
         if not KafkaLocust.client:
-            KafkaLocust.client = KafkaClient(KAFKA_BROKERS)
+            KafkaLocust.client = KafkaConfluentClient(KAFKA_BROKERS)
 
 
 class KafkaBehaviour(TaskSet):
