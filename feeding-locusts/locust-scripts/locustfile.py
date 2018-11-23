@@ -33,7 +33,7 @@ class UserBehaviour(TaskSet):
         else:
             print("Nothing else to do....")
             # raise InterruptTaskSet(True)
-            raise Exception("don't want to live anymore")
+            raise Exception("Ken Lee")
 
 
     @task(1)
