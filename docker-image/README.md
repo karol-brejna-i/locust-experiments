@@ -1,3 +1,12 @@
+
+    Recently a new version of Locust was released so I decided to use this as an excuse to refresh the docker image and show information on how to use it.
+    
+    I decided to create a dedicated repository for the project. If you visit https://github.com/karol-brejna-i/docker-locust, you’ll notice that the repo is organized so it can maintain many versions of the image.
+
+### Please, visit https://github.com/karol-brejna-i/docker-locust for the latest version of the docker image.
+
+
+# Dockerizing Locust experiment
 I wanted the image to:
 * use Python 3
 * use the latest version of Locust
