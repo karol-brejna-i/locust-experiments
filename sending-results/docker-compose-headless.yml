@@ -1,0 +1,63 @@
+version: '3'
+services:
+  master:
+    container_name: master
+    hostname: master
+    image: "grubykarol/sending-experiment:0.0.2"
+    environment:
+      ATTACKED_HOST: http://sut
+      LOCUST_MODE: master
+      LOCUST_MASTER_BIND_PORT: 5557
+      ES_CONNECTIONS: "elasticsearch:9200"
+      TASK_DELAY: 10
+      QUIET_MODE: "${QUIET_MODE:-false}"
+      LOCUST_OPTS: "--no-web --expect-slaves 1 -c 1 -r 1 -t 30s --csv=example"
+    volumes:
+      - ./locust-scripts:/locust
+
+  slave:
+    image: "grubykarol/sending-experiment:0.0.2"
+    environment:
+      ATTACKED_HOST: http://sut
+      LOCUST_MODE: slave
+      LOCUST_MASTER: master
+      LOCUST_MASTER_BIND_PORT: 5557
+      ES_CONNECTIONS: "elasticsearch:9200"
+      TASK_DELAY: 10
+      QUIET_MODE: "${QUIET_MODE:-false}"
+      LOCUST_OPTS: "--no-web --csv=example"
+      NO_PROXY: master
+    volumes:
+      - ./locust-scripts:/locust
+
+  standalone:
+    image: "grubykarol/sending-experiment:0.0.2"
+    container_name: standalone
+    hostname: standalone
+    ports:
+     - "8189:8189"
+    environment:
+      ATTACKED_HOST: http://sut
+      LOCUST_MOD*E: standalone
+      ES_CONNECTIONS: "elasticsearch:9200"
+      TASK_DELAY: 10
+      QUIET_MODE: "${QUIET_MODE:-false}"
+      LOCUST_OPTS: "--no-web -c 1 -r 1 -t 10s"
+      NO_PROXY: standalone
+    volumes:
+      - ./locust-scripts:/locust
+
+  # test endpoint
+  httpbin:
+    image: "kennethreitz/httpbin"
+    container_name: httpbin
+    hostname: httpbin
+  sut:
+    image: "lucascimon/nginx-logging-proxy"
+    container_name: sut
+    hostname: sut
+    environment:
+      PROXIED_ENDPOINT: http://httpbin:80
+      LISTENING_PORT: 80
+    ports:
+      - "80:80"
