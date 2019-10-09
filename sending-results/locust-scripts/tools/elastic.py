@@ -28,7 +28,7 @@ class ElasticSearchAdapter(BackendAdapter):
         # convert data to proper format
         pass
 
-        # store the data in elasticsearch
+        # store the data in Elasticsearch
         res = self.es.index(index=self.index_name, body=data)
         print(res['result'])
 

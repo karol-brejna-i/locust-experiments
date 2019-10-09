@@ -1,16 +1,17 @@
-version: '3'
-
+version: '3.7'
 services:
   elasticsearch:
-    image: elasticsearch:6.7.0
-    container_name: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.0.1
+    container_name: elasticsearch1
     environment:
-      - node.name=es01
+      - node.name=elasticsearch1
       - cluster.name=docker-cluster
+      - cluster.initial_master_nodes=elasticsearch1
       - bootstrap.memory_lock=true
-      - discovery.zen.minimum_master_nodes=1
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-
+      - "ES_JAVA_OPTS=-Xms256M -Xmx256M"
+      - http.cors.enabled=true
+      - http.cors.allow-origin=*
+#      - network.host=_eth0_
     ulimits:
       nproc: 65535
       memlock:
@@ -20,25 +21,27 @@ services:
       - ALL
     privileged: true
     volumes:
-      - esdata1:/usr/share/elasticsearch/data
+      - type: volume
+        source: logs
+        target: /var/log
+      - type: volume
+        source: esmindata1
+        target: /usr/share/elasticsearch/data
     ports:
       - 9200:9200
       - 9300:9300
-#  healthcheck:
-#    test: ["CMD", "curl", "-f", "http://localhost"]
-#    interval: 1m30s
-#    timeout: 10s
-#    retries: 3
-#    start_period: 40s
-
   kibana:
-    image: kibana:6.7.0
+    image: docker.elastic.co/kibana/kibana:7.0.1
     container_name: kibana
     environment:
       SERVER_NAME: localhost
-      ELASTICSEARCH_URL: http://elasticsearch:9200/
+      ELASTICSEARCH_URL: http://elasticsearch1:9200/
     ports:
       - 5601:5601
+    volumes:
+      - type: volume
+        source: logs
+        target: /var/log
     ulimits:
       nproc: 65535
       memlock:
@@ -46,6 +49,7 @@ services:
         hard: -1
     cap_add:
       - ALL
+
 volumes:
-  esdata1:
-    driver: local
+  esmindata1:
+  logs:

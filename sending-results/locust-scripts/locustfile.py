@@ -32,8 +32,7 @@ if is_locustfile_ran_on_master() or is_locustfile_ran_on_standalone():
 
         # dissect the report
         # the slave report data format is: # 'stats':[], 'stats_total':{  }, errors':{}, 'user_count':0
-        # for this example, let's only take _stats_ (iterate over the array elements
-        # and produce individual records for each of them) and _total_ fields
+        # for this example, let's only take stats (and extract individual records for that) and total fields
         global forwarder
         total_stat = {"type": "total", "source": client_id, "payload": data["stats_total"]}
         forwarder.add(total_stat)
@@ -59,6 +58,8 @@ if is_locustfile_ran_on_master() or is_locustfile_ran_on_standalone():
 # configuration for the slave
 if is_locustfile_ran_on_slave() or is_test_ran_on_standalone():
     print("starting external db forwarder on slave")
+    # XXX TODO test this for the standalone mode
+    #  (the forwarder is created twice, it seems -- see code for master/standalone and slave/standalone)
     forwarder = DBForwarder()
 
     ea = ElasticSearchAdapter(ES_CONNECTIONS)
