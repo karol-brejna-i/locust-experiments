@@ -19,6 +19,7 @@ Some of the things I would like to confirm are:
 * Emitting the result to external data store
 * [Sending messages to Apache Kafka](kafka-client/)
 * [Distributing test data to be used by the slaves](./feeding-locusts)
+* [Sending test results to an external database](./sending-results)
 
 This repo holds results of particular experiments.
 

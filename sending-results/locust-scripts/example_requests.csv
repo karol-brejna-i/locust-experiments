@@ -1,0 +1,6 @@
+"Method","Name","# requests","# failures","Median response time","Average response time","Min response time","Max response time","Average Content Size","Requests/s"
+"PUT","/delayed",354,0,4000,4480,4,9017,333,12.62
+"GET","/get",441,0,6,7,4,33,255,15.72
+"POST","/post",465,0,6,7,4,33,425,16.58
+"GET","/status/404",388,388,5,6,4,81,0,13.83
+"None","Total",1648,388,6,967,4,9017,259,58.75
