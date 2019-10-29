@@ -45,7 +45,7 @@ docker build -t grubykarol/sending-experiment -t grubykarol/sending-experiment:0
 ```
 
 ## Running the experiment
-Presented experiments can be ran on any platform of choice: bare metal, VM, cloud, Kubernetes, etc. I've prepared a set of docker and docker composer files to get the advantage of the simplicity of development with docker.
+Presented experiments can be run on any platform of choice: bare metal, VM, cloud, Kubernetes, etc. I've prepared a set of docker and docker composer files to get the advantage of the simplicity of development with docker.
 The next few sections explain setting up different components of the experiment.
 
 ### Starting Elasticsearch and Kibana

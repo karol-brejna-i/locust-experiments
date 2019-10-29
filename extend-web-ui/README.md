@@ -1,9 +1,9 @@
 Locust provides a small HTTP API and a Web UI to control the execution of the tests and browsing through the results.
-One can use the API, for example, to automatically trigger stress tests as a part of build process.
+One can use the API, for example, to automatically trigger stress tests as a part of a build process.
 
 What if we want to extend the UI by adding some customized result views, new actions?
 
-According to [the docs](https://docs.locust.io/en/latest/extending-locust.html) it should be fairly easy.
+According to [the docs](https://docs.locust.io/en/latest/extending-locust.html), it should be fairly easy.
 
 # The goal
 
@@ -81,7 +81,7 @@ The actual code resides in the enclosed [locustfile](./locust-scripts/locustfile
 ## Web form
 Being a flask app, the UI can utilize [Jinja2](http://jinja.pocoo.org/) to generate the pages.
 For this experiment I trimmed down [the template used by Locust itself](https://github.com/locustio/locust/blob/master/locust/templates/index.html)
-(actually: crippled it greatly; I didn't want to focust on the UI part, but just prove the point so I did a minimal effort here)
+(actually: crippled it greatly; I didn't want to focus on the UI part, but just prove the point so I did a minimal effort here)
 so my web form looks at least a bit similar to the rest of the UI.
 
 Key part of [rescale-form.html](./locust-scripts/rescale-form.html) is the following form:
@@ -96,7 +96,7 @@ Key part of [rescale-form.html](./locust-scripts/rescale-form.html) is the follo
 And these are all the required parts.
 
 # Deployment
-This work depends on [previous experiment](https://medium.com/locust-io-experiments/locust-io-experiments-running-in-kubernetes-95447571a550) which point was to create Kubernetes descriptors for Locust. See the [this folder](../kubernetes) for the scripts and info on how to use them
+This work depends on [previous experiment](https://medium.com/locust-io-experiments/locust-io-experiments-running-in-kubernetes-95447571a550) which point was to create Kubernetes descriptors for Locust. See [this folder](../kubernetes) for the scripts and info on how to use them
 
 Basic K8s mechanics here are intact, the difference being [the config map that holds update Locust scripts](./kubernetes/scripts-cm.yaml).
 

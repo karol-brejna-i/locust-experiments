@@ -15,7 +15,7 @@ Along the way, the following "techniques" will be used here, which can also be u
 * doing some preparations before the tests start,
 * sending some data from the master to workers.
 
-See the following article for more detailed walk through: https://medium.com/locust-io-experiments/locust-experiments-feeding-the-locusts-cf09e0f65897
+See the following article for more detailed walkthrough: https://medium.com/locust-io-experiments/locust-experiments-feeding-the-locusts-cf09e0f65897
 
 
 ## Scope of the experiment
@@ -23,7 +23,7 @@ This experiment is trying to deliver the following requirements:
 
 Assume, that we are testing a web service's endpoint that accepts **POST requests with JSON payload**.
 For this, we want to use a **specific data set**. Let's say, we have a **CSV file** where every row represents a single message to be sent. We want to be able to read the content **before the tests start**.
-Furthermore, we require being able to run the test in a **distributed manner ** -  running multiple slave workers that will issue the POST request.
+Furthermore, we require being able to run the test in a **distributed manner** -  running multiple slave workers that will issue the POST request.
 Moreover, we don't want to have **any duplicates** (sending the same value more than once).
 
 ## Contents of this repository
@@ -31,12 +31,12 @@ Moreover, we don't want to have **any duplicates** (sending the same value more 
 * [0mq-playground](./0mq-playground) - some experiments that helped me understand some 0MQ mechanics
 * [data](./data) - example data explanation plus description on how to use some other dataset
 * [locust-scripts](./locust-scripts) - the folder for locust files
-* [docker-compose.yml](./docker-compose.yml) and [docker-compose-headless.yml](./docker-compose-headless.yml) - for setting up development cluster
+* [docker-compose.yml](./docker-compose.yml) and [docker-compose-headless.yml](./docker-compose-headless.yml) - for setting up a development cluster
 
 ## Development environment setup
 For testing the solution we need to run Locust in distributed mode. 
 You could do this by manually running master and slaves yourself from the command line. 
-Another option here is doing it with kubernetes (https://medium.com/locust-io-experiments/locust-io-experiments-running-in-kubernetes-95447571a550)
+Another option here is doing it with Kubernetes (https://medium.com/locust-io-experiments/locust-io-experiments-running-in-kubernetes-95447571a550)
 
 This time, on the other hand, I'll use Docker Compose (my Kubernetes doesn't want to get up after last Windows update...).
 

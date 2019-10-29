@@ -38,7 +38,7 @@ I'll use *deployment* in order to "ask" K8s for making sure our [master](./maste
 # Cluster deployment
 
 All the source files used below are stored in /kubernetes directory of the experiments repo. Let's set up the cluster. 
-(I assume that kubernetes is up and running and kubectl is able to connect to the cluster.)
+(I assume that Kubernetes is up and running and kubectl is able to connect to the cluster.)
 
     > git clone https://github.com/karol-brejna-i/locust-experiments.git
     > cd locust-experiments
@@ -138,7 +138,7 @@ For me, all went well, which the following log proves:
 What you can see here is:
 * some inactivity period, stats from before the test was started (lines 1-4)
 * the moment that the master delegated the work to the slaves (line 6)
-* growing number of request (starting from line 7)
+* THE growing number of request (starting from line 7)
 
 # External access
 

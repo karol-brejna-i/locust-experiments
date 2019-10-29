@@ -14,7 +14,7 @@ non-blocking API by default (see: https://kafka.apache.org/10/javadoc/index.html
 
 So, creating a Kafka client for Locust could be a time well invested!
 
-There is accompanying article describing the process and results of creating a Kafka client here: https://medium.com/locust-io-experiments/locust-experiments-locust-meets-kafka-b9d9e6e49537.
+There is an accompanying article describing the process and results of creating a Kafka client here: https://medium.com/locust-io-experiments/locust-experiments-locust-meets-kafka-b9d9e6e49537.
 Please, take a look at it. 
 
 Below you'll find some additional technical details that can help with understanding and reproducing the experiment.
@@ -29,7 +29,7 @@ You can achieve it in many ways:
 * use docker  -  there are many docker images that allow for running Kafka in Docker (https://github.com/wurstmeister/kafka-docker being one of the most popular),
 * Kubernetes  - this is the option I opted for. First of all, I have already tested Locust cluster creation with K8s.
 
-For me ,  personally , the easiest approach is to go with K8s. It manages the containers, helps mak networking right, etc.
+For me, personally, the easiest approach is to go with K8s. It manages the containers, helps mak networking right, etc.
 
 Please, take a look at [kuberenetes](kubernetes) folder for the details on how to set up Locust and Kafka in Kubernetes for this experiment.
 
@@ -40,4 +40,4 @@ Please, take a look at [kuberenetes](kubernetes) folder for the details on how t
 * [additional_handlers.py](locust-scripts/additional_handlers.py) - additional request success/failure handlers for debug purposes (when turned on, they will log every single Kafka request to STDOUT)
 * [kafka_client.py](locust-scripts/kafka_client.py) - Kafka client code
 
-See https://medium.com/locust-io-experiments/locust-experiments-locust-meets-kafka-b9d9e6e49537 for detailed description.
+See https://medium.com/locust-io-experiments/locust-experiments-locust-meets-kafka-b9d9e6e49537 for a detailed description.
