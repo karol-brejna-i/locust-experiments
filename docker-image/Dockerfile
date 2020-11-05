@@ -17,7 +17,7 @@ COPY docker-entrypoint.sh /
 
 RUN    apk --no-cache add --virtual=.build-dep build-base \
     && apk --no-cache add libzmq \
-    && pip install --no-cache-dir locustio==0.8.1 \
+    && pip install --no-cache-dir locustio==1.3.2 \
     && apk del .build-dep \
     && chmod +x /docker-entrypoint.sh
 
