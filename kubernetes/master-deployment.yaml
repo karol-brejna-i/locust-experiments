@@ -26,11 +26,6 @@ spec:
         imagePullPolicy: IfNotPresent
         name: locust-master
         env:
-          - name: ATTACKED_HOST
-            valueFrom:
-              configMapKeyRef:
-                name: locust-cm
-                key: ATTACKED_HOST
           - name: LOCUST_MODE
             value: MASTER
           - name: LOCUST_OPTS
