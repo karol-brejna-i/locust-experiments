@@ -5,12 +5,14 @@ metadata:
     deployment.kubernetes.io/revision: "1"
   labels:
     role: locust-master
+    app: locust-master
   name: locust-master
 spec:
   replicas: 1
   selector:
     matchLabels:
       role: locust-master
+      app: locust-master
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -20,18 +22,15 @@ spec:
     metadata:
       labels:
         role: locust-master
+        app: locust-master
     spec:
       containers:
-      - image: mosesliao/locust:1.3.2
+      - image: locustio/locust
         imagePullPolicy: IfNotPresent
-        name: locust-master
-        env:
-          - name: LOCUST_MODE
-            value: MASTER
-          - name: LOCUST_OPTS
-            value: --print-stats
+        name: master
+        args: ["--master"]
         volumeMounts:
-          - mountPath: /locust
+          - mountPath: /home/locust
             name: locust-scripts
         ports:
         - containerPort: 5557
