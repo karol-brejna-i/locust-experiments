@@ -10,6 +10,6 @@ spec:
   - http:
       paths:
       - backend:
-          serviceName: locust-master
+          serviceName: master
           servicePort: 8089
         path: /locust

@@ -5,6 +5,7 @@ metadata:
     role: locust-master
   name: locust-master
 spec:
+  type: ClusterIP
   ports:
   - port: 5557
     name: communication
@@ -15,3 +16,4 @@ spec:
     name: web-ui
   selector:
     role: locust-master
+    app: locust-master

@@ -1,6 +1,6 @@
 
     Recently a new version of Locust was released so I decided to use this as an excuse to refresh the docker image and show information on how to use it.
-    
+
     I decided to create a dedicated repository for the project. If you visit https://github.com/karol-brejna-i/docker-locust, you’ll notice that the repo is organized so it can maintain many versions of the image.
 
 ### Please, visit https://github.com/karol-brejna-i/docker-locust for the latest version of the docker image.
@@ -16,10 +16,10 @@ I wanted the image to:
 
 Most of the images found on docker hub was old (1-2 yo) so I decided to give it a try.
 
-This one is based on python:3.6-alpine, installs `locustio` package and required dependencies. 
+This one is based on python:3.6-alpine, installs `locustio` package and required dependencies.
 It weighs about 124MB.
- 
-# Usage 
+
+# Usage
 The image doesn't include locust scripts during build. It assumes, the scripts will be supplied on runtime by mounting a volume (to `/locust` path).
 
 ## Building the image
@@ -28,7 +28,7 @@ docker build -t grubykarol/locust:0.8.1-py3.6 .
 ```
 or (if behind a proxy):
 ```
-docker build --build-arg HTTP_PROXY=$http_proxy --build-arg HTTPS_PROXY=$https_proxy -t grubykarol/locust:0.8.1-py3.6 . 
+docker build --build-arg HTTP_PROXY=$http_proxy --build-arg HTTPS_PROXY=$https_proxy -t grubykarol/locust:0.8.1-py3.6 .
 ```
 
 ## Running the image
@@ -61,10 +61,9 @@ Run master:
 ```
 docker run --name master --hostname master \
  -p 8089:8089 -p 5557:5557 -p 5558:5558 \
- -v $MY_SCRIPTS:/locust \
- -e ATTACKED_HOST='http://master:8089' \
+ -v $(pwd):/locust \
  -e LOCUST_MODE=master \
- --rm -d grubykarol/locust:0.8.1-py3.6
+ --rm -d mosesliao/locust:1.3.2
 ```
 
 and some slaves:
@@ -72,19 +71,17 @@ and some slaves:
 ```
 docker run --name slave0 \
  --link master --env NO_PROXY=master \
- -v $MY_SCRIPTS:/locust \
- -e ATTACKED_HOST=http://master:8089 \
+ -v $(pwd):/locust \
  -e LOCUST_MODE=slave \
  -e LOCUST_MASTER=master \
- --rm -d grubykarol/locust:0.8.1-py3.6
+ --rm -d mosesliao/locust:1.3.2
 
 docker run --name slave1 \
  --link master --env NO_PROXY=master \
- -v $MY_SCRIPTS:/locust \
- -e ATTACKED_HOST=http://master:8089 \
+ -v $(pwd):/locust \
  -e LOCUST_MODE=slave \
  -e LOCUST_MASTER=master \
- --rm -d grubykarol/locust:0.8.1-py3.6
+ --rm -d mosesliao/locust:1.3.2
 ```
 
 

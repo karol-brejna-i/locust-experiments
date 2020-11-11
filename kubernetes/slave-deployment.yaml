@@ -1,16 +1,18 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
   labels:
-    role: locust-slave
-  name: locust-slave
+    role: locust-worker
+    app: locust-worker
+  name: locust-worker
 spec:
   replicas: 2
   selector:
     matchLabels:
-      role: locust-slave
+      role: locust-worker
+      app: locust-worker
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -19,24 +21,16 @@ spec:
   template:
     metadata:
       labels:
-        role: locust-slave
+        role: locust-worker
+        app: locust-worker
     spec:
       containers:
-      - image: grubykarol/locust:0.8.1-py3.6
+      - image: locustio/locust
         imagePullPolicy: IfNotPresent
-        name: locust-slave
-        env:
-          - name: ATTACKED_HOST
-            valueFrom:
-              configMapKeyRef:
-                name: locust-cm
-                key: ATTACKED_HOST
-          - name: LOCUST_MODE
-            value: SLAVE
-          - name: LOCUST_MASTER
-            value: locust-master
+        name: worker
+        args: ["--worker", "--master-host=locust-master"]
         volumeMounts:
-          - mountPath: /locust
+          - mountPath: /home/locust
             name: locust-scripts
         resources: {}
         terminationMessagePath: /dev/termination-log

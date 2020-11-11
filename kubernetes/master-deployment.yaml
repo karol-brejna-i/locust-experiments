@@ -1,16 +1,18 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
   labels:
     role: locust-master
+    app: locust-master
   name: locust-master
 spec:
   replicas: 1
   selector:
     matchLabels:
       role: locust-master
+      app: locust-master
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -20,23 +22,15 @@ spec:
     metadata:
       labels:
         role: locust-master
+        app: locust-master
     spec:
       containers:
-      - image: grubykarol/locust:0.8.1-py3.6
+      - image: locustio/locust
         imagePullPolicy: IfNotPresent
-        name: locust-master
-        env:
-          - name: ATTACKED_HOST
-            valueFrom:
-              configMapKeyRef:
-                name: locust-cm
-                key: ATTACKED_HOST
-          - name: LOCUST_MODE
-            value: MASTER
-          - name: LOCUST_OPTS
-            value: --print-stats
+        name: master
+        args: ["--master"]
         volumeMounts:
-          - mountPath: /locust
+          - mountPath: /home/locust
             name: locust-scripts
         ports:
         - containerPort: 5557

@@ -4,7 +4,7 @@ metadata:
   name: scripts-cm
 data:
   locustfile.py: |
-    from locust import HttpLocust, TaskSet, task
+    from locust import HttpUser, TaskSet, task
 
 
     class UserTasks(TaskSet):
@@ -18,6 +18,5 @@ data:
             self.client.get("/stats/requests")
 
 
-    class WebsiteUser(HttpLocust):
+    class WebsiteUser(HttpUser):
         task_set = UserTasks
-
